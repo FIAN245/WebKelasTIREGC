@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portal Kelas T.Informatika</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="logo">TI-Reg C</div>
+        <ul class="nav-links">
+            <li><a href="index.html" class="active">Beranda</a></li>
+            <li><a href="tugas.html">Tugas</a></li>
+            <li><a href="profil.html">Profil</a></li>
+        </ul>
+        <div class="hamburger">
+            <span></span><span></span><span></span>
+        </div>
+    </nav>
+
+    <div class="container">
+        
+        <header class="hero">
+            <h1 id="header-sapaan">Halo, Sobat Informatika!</h1>
+            <p>Portal informasi resmi kelas <span id="nama-kelas-display">...</span></p>
+        </header>
+
+        <section class="section-box">
+            <h2>📢 Pengumuman Terbaru</h2>
+            <div id="pengumuman-list" class="card-container">
+                <p class="loading">Memuat data...</p>
+            </div>
+        </section>
+
+        <section class="section-box">
+            <h2>📅 Jadwal Kuliah</h2>
+            <div class="table-responsive">
+                <table class="table-jadwal">
+                    <thead>
+                        <tr>
+                            <th>Hari</th>
+                            <th>Matkul</th>
+                            <th>Dosen</th>
+                            <th>Jam</th>
+                            <th>Info</th>
+                        </tr>
+                    </thead>
+                    <tbody id="jadwal-list">
+                        </tbody>
+                </table>
+            </div>
+        </section>
+
+        <section class="section-box">
+            <h2>📝 Tugas Upcoming</h2>
+            <div id="tugas-preview-list" class="card-container">
+                </div>
+            <a href="tugas.html" class="btn-more">Lihat Semua Detail Tugas →</a>
+        </section>
+
+    </div>
+
+    <footer>
+        <p>&copy; 2026 <span id="footer-year"></span> Created by <span id="dev-name">...</span></p>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+</html>
