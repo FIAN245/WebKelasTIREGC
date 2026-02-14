@@ -1,0 +1,231 @@
+/* --- RESET & VARIABLES --- */
+:root {
+    --primary-color: #004aad; /* Biru Teknik */
+    --accent-color: #ff9100;  /* Oranye Highlight */
+    --dark-bg: #1e1e24;
+    --light-bg: #f4f7f6;
+    --text-color: #333;
+    --white: #ffffff;
+    --border-radius: 8px;
+    --shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: var(--light-bg);
+    color: var(--text-color);
+    line-height: 1.6;
+}
+
+/* --- NAVBAR --- */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--primary-color);
+    padding: 1rem 5%;
+    color: var(--white);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin-left: 20px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: var(--white);
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover, .nav-links a.active {
+    color: var(--accent-color);
+}
+
+/* Hamburger Menu (Mobile) */
+.hamburger {
+    display: none;
+    cursor: pointer;
+}
+.hamburger span {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px;
+    background-color: var(--white);
+    transition: all 0.3s ease;
+}
+
+/* --- CONTAINER & LAYOUT --- */
+.container {
+    max-width: 1100px;
+    margin: 20px auto;
+    padding: 0 20px;
+}
+
+.section-box {
+    margin-bottom: 40px;
+}
+
+h2 {
+    border-left: 5px solid var(--primary-color);
+    padding-left: 10px;
+    margin-bottom: 20px;
+    color: var(--primary-color);
+}
+
+/* --- COMPONENTS: CARDS --- */
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Responsif Grid */
+    gap: 20px;
+}
+
+.card {
+    background: var(--white);
+    padding: 20px;
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow);
+    transition: transform 0.2s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+/* Pengumuman Styles */
+.pengumuman-card.penting {
+    border-left: 5px solid red;
+    background-color: #fff0f0;
+}
+
+.card-header {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.9rem;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+.badge {
+    background: red;
+    color: white;
+    padding: 2px 8px;
+    border-radius: 4px;
+    font-size: 0.8rem;
+    font-weight: bold;
+}
+
+/* --- TABLES (Jadwal) --- */
+.table-responsive {
+    overflow-x: auto; /* Agar bisa discroll di HP */
+    background: var(--white);
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow);
+}
+
+.table-jadwal {
+    width: 100%;
+    border-collapse: collapse;
+    min-width: 600px; /* Memaksa scroll jika layar kecil */
+}
+
+.table-jadwal th, .table-jadwal td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+.table-jadwal th {
+    background-color: var(--primary-color);
+    color: var(--white);
+}
+
+.fw-bold { font-weight: 600; }
+
+.status {
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-size: 0.85rem;
+    font-weight: bold;
+}
+.status.offline { background: #e0f7fa; color: #006064; }
+.status.online { background: #fff3e0; color: #e65100; }
+
+/* --- TUGAS CARD --- */
+.tugas-card h3 { color: var(--primary-color); font-size: 1.1rem; }
+.tugas-card h4 { margin: 5px 0; }
+.deadline { color: red; font-weight: bold; }
+.btn-more {
+    display: inline-block;
+    margin-top: 15px;
+    color: var(--primary-color);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* --- FOOTER --- */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: var(--primary-color);
+    color: var(--white);
+    margin-top: 50px;
+}
+
+/* --- RESPONSIVE (MOBILE) --- */
+@media (max-width: 768px) {
+    .nav-links {
+        position: absolute;
+        right: 0px;
+        height: 92vh;
+        top: 8vh;
+        background-color: var(--primary-color);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 50%;
+        transform: translateX(100%);
+        transition: transform 0.5s ease-in;
+    }
+    
+    .nav-links li {
+        margin: 20px 0;
+        opacity: 0;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    /* Animasi Menu Masuk */
+    .nav-links.active {
+        transform: translateX(0%);
+    }
+    
+    .nav-links.active li {
+        opacity: 1;
+        transition: opacity 0.5s ease-in;
+    }
+}
