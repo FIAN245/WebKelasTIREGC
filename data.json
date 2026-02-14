@@ -1,0 +1,58 @@
+{
+  "identitas": {
+    "nama_kelas": "Teknik Informatika - Reguler C",
+    "semester": "Semester 6",
+    "kampus": "Fakultas Teknik",
+    "pembuat": "Nama Kamu"
+  },
+  "pengumuman": [
+    {
+      "id": 1,
+      "text": "Kuliah Pemrograman Web hari ini ditiadakan, diganti tugas mandiri.",
+      "tanggal": "14 Feb 2026",
+      "penting": true
+    },
+    {
+      "id": 2,
+      "text": "Uang kas harap dibayar sebelum UTS.",
+      "tanggal": "12 Feb 2026",
+      "penting": false
+    }
+  ],
+  "jadwal": [
+    {
+      "hari": "Senin",
+      "matkul": "Kecerdasan Buatan",
+      "dosen": "Pak Budi",
+      "jam": "08:00 - 10:00",
+      "ruang": "Lab 3",
+      "tipe": "Offline"
+    },
+    {
+      "hari": "Rabu",
+      "matkul": "Pemrograman Mobile",
+      "dosen": "Bu Sari",
+      "jam": "13:00 - 15:00",
+      "ruang": "Zoom Meeting",
+      "tipe": "Online"
+    }
+  ],
+  "tugas": [
+    {
+      "id": 1,
+      "matkul": "Kecerdasan Buatan",
+      "judul": "Analisa Jurnal AI",
+      "deadline": "20 Feb 2026",
+      "deskripsi": "Cari jurnal internasional tentang AI tahun 2024 ke atas, resume minimal 2 halaman.",
+      "link_pengumpulan": "https://classroom.google.com/..."
+    },
+    {
+      "id": 2,
+      "matkul": "Pemrograman Mobile",
+      "judul": "Install Flutter",
+      "deadline": "18 Feb 2026",
+      "deskripsi": "Screenshot hasil instalasi Flutter dan Emulator di laptop masing-masing.",
+      "link_pengumpulan": null
+    }
+  ]
+}
