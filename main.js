@@ -124,6 +124,7 @@ function renderAllTugas(listTugas) {
     if (!container) return; 
 
     container.innerHTML = "";
+    
     if (listTugas.length === 0) {
         container.innerHTML = "<p>Tidak ada tugas saat ini.</p>";
         return;
@@ -133,14 +134,25 @@ function renderAllTugas(listTugas) {
         const div = document.createElement("div");
         div.className = "card tugas-card";
         
+        // --- LOGIKA BARU: Cek Tipe Link ---
         let linkHtml = "";
-        if (tugas.link_pengumpulan) {
-            linkHtml = `<a href="${tugas.link_pengumpulan}" target="_blank" class="btn-more" style="margin-top:10px; display:inline-block;">📂 Kumpulkan Tugas</a>`;
-        } else {
-            linkHtml = `<span style="color: grey; font-size: 0.9rem;">(Dikumpulkan Offline/LMS Kampus)</span>`;
+        
+        // Cek 1: Apakah kosong / null?
+        if (!tugas.link_pengumpulan) {
+            linkHtml = `<span style="color: grey; font-size: 0.9rem; display:block; margin-top:10px;">(Dikumpulkan Offline/LMS Kampus)</span>`;
+        } 
+        // Cek 2: Apakah isinya Link (diawali http atau https)?
+        else if (tugas.link_pengumpulan.startsWith("http")) {
+            linkHtml = `<a href="${tugas.link_pengumpulan}" target="_blank" class="btn-more" style="margin-top:15px; display:inline-block; background-color: var(--primary-color); color: white; padding: 8px 15px; border-radius: 5px; text-decoration: none;">📂 Kumpulkan Tugas</a>`;
+        } 
+        // Cek 3: Kalau bukan link, berarti Pesan Teks (misal: "Kirim ke Edlink")
+        else {
+            linkHtml = `<div style="margin-top:15px; padding: 10px; background-color: #e3f2fd; color: #0d47a1; border-radius: 6px; font-size: 0.9rem; border-left: 4px solid #2196f3;">
+                            ℹ️ ${tugas.link_pengumpulan}
+                        </div>`;
         }
 
-        // Di sini kita pakai formatContent yang baru
+        // --- Render HTML ---
         div.innerHTML = `
             <div style="border-bottom: 1px solid #eee; padding-bottom: 10px; margin-bottom: 10px;">
                 <h3 style="color:var(--primary-color)">${tugas.matkul}</h3>
@@ -157,6 +169,7 @@ function renderAllTugas(listTugas) {
         container.appendChild(div);
     });
 }
+
 
 function renderProfilKelas(identitas) {
     const container = document.getElementById("profil-kelas-card");
