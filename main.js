@@ -3,7 +3,6 @@ document.addEventListener("DOMContentLoaded", () => {
     fetch('data.json')
         .then(response => response.json())
         .then(data => {
-            // Jalankan fungsi sesuai halaman yang aktif
             renderIdentitas(data.identitas);
             
             // Halaman Home
@@ -16,7 +15,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
             // Halaman Profil
             renderProfilKelas(data.identitas);
-            renderDaftarMatkul(data.jadwal); // Kita ambil daftar matkul dari jadwal
+            renderDaftarMatkul(data.jadwal); 
         })
         .catch(error => console.error('Gagal mengambil data:', error));
 
@@ -32,19 +31,27 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 });
 
-// --- Fungsi Penampil Data ---
+// --- HELPER: Ubah Teks URL jadi Link Klik ---
+function textToLink(text) {
+    // Regex mendeteksi http atau https
+    const urlPattern = /(https?:\/\/[^\s]+)/g;
+    return text.replace(urlPattern, (url) => {
+        // Batasi panjang tampilan link biar ga ngerusak layout kalau kepanjangan
+        let displayUrl = url.length > 30 ? url.substring(0, 30) + "..." : url;
+        return `<a href="${url}" target="_blank" style="color: var(--accent-color); text-decoration: underline; word-break: break-all;">${displayUrl}</a>`;
+    });
+}
+
+// --- FUNGSI RENDER ---
 
 function renderIdentitas(identitas) {
-    // Mengisi elemen-elemen umum (header, footer, dll)
     if(document.getElementById("nama-kelas-display")) document.getElementById("nama-kelas-display").innerText = identitas.nama_kelas;
     if(document.getElementById("footer-year")) document.getElementById("footer-year").innerText = new Date().getFullYear();
     
-    // Mengisi nama developer di footer dan di halaman profil
     const devNameElements = document.querySelectorAll("#dev-name, #dev-name-profile");
     devNameElements.forEach(el => el.innerText = identitas.pembuat);
 }
 
-// --- LOGIKA HOME ---
 function renderPengumuman(listPengumuman) {
     const container = document.getElementById("pengumuman-list");
     if (!container) return; 
@@ -58,7 +65,7 @@ function renderPengumuman(listPengumuman) {
                 <span class="date">${item.tanggal}</span>
                 ${item.penting ? '<span class="badge">PENTING</span>' : ''}
             </div>
-            <p>${item.text}</p>
+            <p>${textToLink(item.text)}</p>
         `;
         container.appendChild(div);
     });
@@ -87,7 +94,6 @@ function renderTugasPreview(listTugas) {
     if (!container) return;
 
     container.innerHTML = "";
-    // Hanya ambil 2 tugas pertama
     const previewTugas = listTugas.slice(0, 2); 
 
     previewTugas.forEach(tugas => {
@@ -104,10 +110,9 @@ function renderTugasPreview(listTugas) {
     });
 }
 
-// --- LOGIKA HALAMAN TUGAS (FULL) ---
 function renderAllTugas(listTugas) {
     const container = document.getElementById("tugas-list-full");
-    if (!container) return; // Stop jika bukan halaman tugas
+    if (!container) return; 
 
     container.innerHTML = "";
     
@@ -120,7 +125,6 @@ function renderAllTugas(listTugas) {
         const div = document.createElement("div");
         div.className = "card tugas-card";
         
-        // Cek apakah ada link pengumpulan
         let linkHtml = "";
         if (tugas.link_pengumpulan) {
             linkHtml = `<a href="${tugas.link_pengumpulan}" target="_blank" class="btn-more" style="margin-top:10px; display:inline-block;">📂 Kumpulkan Tugas</a>`;
@@ -134,14 +138,13 @@ function renderAllTugas(listTugas) {
                 <small>Deadline: <span class="deadline">${tugas.deadline}</span></small>
             </div>
             <h2 style="font-size: 1.2rem; margin-bottom: 10px;">${tugas.judul}</h2>
-            <p>${tugas.deskripsi}</p>
+            <p>${textToLink(tugas.deskripsi)}</p>
             ${linkHtml}
         `;
         container.appendChild(div);
     });
 }
 
-// --- LOGIKA HALAMAN PROFIL ---
 function renderProfilKelas(identitas) {
     const container = document.getElementById("profil-kelas-card");
     if (!container) return;
@@ -160,10 +163,7 @@ function renderDaftarMatkul(listJadwal) {
     if (!ul) return;
 
     ul.innerHTML = "";
-    
-    // Trik: Ambil nama matkul unik saja (biar ga dobel kalau matkulnya ada 2x seminggu)
     const uniqueMatkul = [...new Set(listJadwal.map(item => item.matkul))];
-
     uniqueMatkul.forEach(matkul => {
         const li = document.createElement("li");
         li.innerText = matkul;
@@ -172,15 +172,3 @@ function renderDaftarMatkul(listJadwal) {
         ul.appendChild(li);
     });
 }
-// --- FUNGSI TAMBAHAN: AUTO LINK ---
-function textToLink(text) {
-    // Pola untuk mendeteksi link (Regex)
-    const urlPattern = /(https?:\/\/[^\s]+)/g;
-    
-    // Ubah link menjadi tag <a>
-    return text.replace(urlPattern, (url) => {
-        return `<a href="${url}" target="_blank" style="color: #007bff; text-decoration: underline;">${url}</a>`;
-    });
-}
-
-
