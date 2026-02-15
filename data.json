@@ -3,38 +3,62 @@
     "nama_kelas": "Teknik Informatika - Reguler C",
     "semester": "Semester 6",
     "kampus": "Fakultas Teknik",
-    "pembuat": "Nama Kamu"
+    "pembuat": "F2"
   },
   "pengumuman": [
     {
       "id": 1,
-      "text": "Kuliah Pemrograman Web jumat diubah ke online via google meet jam 19:30, link google meet :  https://meet.google.com/qvm-jumk-gao",
-      "tanggal": "14 Feb 2026",
+      "text": "Pembayaran UTS Ganjil TA 2025/2026",
+      "tanggal": "09 - 28 Februari 2026",
       "penting": true
     },
     {
       "id": 2,
-      "text": "Uang kas harap dibayar sebelum UTS.",
-      "tanggal": "12 Feb 2026",
-      "penting": false
+      "text": "Akan diadakan UTS Ganjil TA 2025/2026 Reguler C",
+      "tanggal": "13 - 14 Maret 2026",
+      "penting": true
     }
   ],
   "jadwal": [
     {
-      "hari": "Senin",
-      "matkul": "Kecerdasan Buatan",
-      "dosen": "Pak Budi",
-      "jam": "08:00 - 10:00",
-      "ruang": "Lab 3",
+      "hari": "Jumat",
+      "matkul": "Jaringan Syaraf Tiruan",
+      "dosen": "Pak Ariesanto Ramadhan",
+      "jam": "19:30 - 21:00",
+      "ruang": "Goggle Meet",
+      "tipe": "Online"
+    },
+    {
+      "hari": "Sabtu",
+      "matkul": "Multimedia & Rangkaian Digital",
+      "dosen": "Bu Bayti",
+      "jam": "08:00 - 10:30",
+      "ruang": "Lab Dasar",
       "tipe": "Offline"
     },
     {
-      "hari": "Rabu",
-      "matkul": "Pemrograman Mobile",
-      "dosen": "Bu Sari",
-      "jam": "13:00 - 15:00",
-      "ruang": "Zoom Meeting",
+      "hari": "Sabtu",
+      "matkul": "Etika dan Profesi",
+      "dosen": "Bu Intan",
+      "jam": "11:00 - 12:00",
+      "ruang": "Google Meet",
       "tipe": "Online"
+    },
+        {
+      "hari": "Sabtu",
+      "matkul": "Pengolahan Citra Digital",
+      "dosen": "Pa Bambang",
+      "jam": "13:30 - 15:50",
+      "ruang": "Lab Lanjut",
+      "tipe": "Offline"
+    },
+        {
+      "hari": "Sabtu",
+      "matkul": "Pemrograman Sistem",
+      "dosen": "Pa Agys",
+      "jam": "16:30 - 18:30 ",
+      "ruang": "Lab Lanjut",
+      "tipe": "Offline"
     }
   ],
   "tugas": [
@@ -47,18 +71,28 @@
         "Tema Bebas",
         "Kelompok 4 Orang",
         "Kelompok dibentuk sendiri (sesuai kecocokan)",
+        "Silahkan isi kelompok kalian di link ini :",
         "Outputnya Video format .mp4",
-        "Referensi: https://youtube.com/..."
+        "Referensi: https://youtube.com/...",
+        "Kirim Hasil Videonya ke Admin Alfian atau Surur yang nantinya akan di Upload Ke Tiktok Kelas",
+        "lalu yang sudah di upload videonya akan dikirimkan ke masing masing individu berupa Link Tiktoknya"
       ],
-      "link_pengumpulan": "https://classroom.google.com/..."
+      "link_pengumpulan": "Kirim Langsung Ke Edlink"
     },
     {
       "id": 2,
-      "matkul": "Pemrograman Mobile",
-      "judul": "Install Flutter",
-      "deadline": "18 Feb 2026",
-      "deskripsi": "Screenshot hasil instalasi Flutter dan Emulator di laptop masing-masing.",
-      "link_pengumpulan": null
+      "matkul": "Multimedia",
+      "judul": "Revisi Poster/Banner Soft selling PMB UMUS",
+      "deadline": "7 Maret 2026",
+      "deskripsi": [
+        "Bagi  yang merasa kurang benar dengan definisi dari Soft selling dari tugas #2 yang sudah dikirim sebelumnya,",
+        "Silahkan Bisa Perbaiki lalu kirim ke edlink bagian Revisi",
+        "Individu",
+        "Software/Aplikasi bebas",
+        "Outputnya Dokumen format .PDF",
+        "Referensi: https://youtube.com/..."
+      ],
+      "link_pengumpulan": "Kirim Langsung Ke Edlink"
     }
   ]
 }
