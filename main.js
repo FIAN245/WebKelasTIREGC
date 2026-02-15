@@ -172,3 +172,15 @@ function renderDaftarMatkul(listJadwal) {
         ul.appendChild(li);
     });
 }
+// --- FUNGSI TAMBAHAN: AUTO LINK ---
+function textToLink(text) {
+    // Pola untuk mendeteksi link (Regex)
+    const urlPattern = /(https?:\/\/[^\s]+)/g;
+    
+    // Ubah link menjadi tag <a>
+    return text.replace(urlPattern, (url) => {
+        return `<a href="${url}" target="_blank" style="color: #007bff; text-decoration: underline;">${url}</a>`;
+    });
+}
+
+
