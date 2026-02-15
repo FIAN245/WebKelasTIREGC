@@ -40,10 +40,16 @@
   "tugas": [
     {
       "id": 1,
-      "matkul": "Kecerdasan Buatan",
-      "judul": "Analisa Jurnal AI",
-      "deadline": "20 Feb 2026",
-      "deskripsi": "Cari jurnal internasional tentang AI tahun 2024 ke atas, resume minimal 2 halaman.",
+      "matkul": "Multimedia",
+      "judul": "Membuat Video Sinematik Soft selling PMB UMUS",
+      "deadline": "1 Maret 2026",
+      "deskripsi": [
+        "Tema Bebas",
+        "Kelompok 4 Orang",
+        "Kelompok dibentuk sendiri (sesuai kecocokan)",
+        "Outputnya Video format .mp4",
+        "Referensi: https://youtube.com/..."
+      ],
       "link_pengumpulan": "https://classroom.google.com/..."
     },
     {
