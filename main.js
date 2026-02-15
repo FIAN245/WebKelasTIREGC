@@ -1,6 +1,8 @@
 document.addEventListener("DOMContentLoaded", () => {
     // 1. Ambil data dari JSON
-    fetch('data.json')
+    // Kita tambahkan ?t=waktu_sekarang agar browser mengira ini file baru terus
+fetch('data.json?t=' + new Date().getTime())
+
         .then(response => response.json())
         .then(data => {
             renderIdentitas(data.identitas);
