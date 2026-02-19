@@ -8,12 +8,18 @@
   "pengumuman": [
     {
       "id": 1,
+      "text": "Mk Etika dan Profesi Masuk Offline Hari Sabtu jam 11",
+      "tanggal": "21 Februari 2026",
+      "penting": true
+    },
+    {
+      "id": 2,
       "text": "Pembayaran UTS Ganjil TA 2025/2026",
       "tanggal": "09 - 28 Februari 2026",
       "penting": true
     },
     {
-      "id": 2,
+      "id": 3,
       "text": "Akan diadakan UTS Ganjil TA 2025/2026 Reguler C",
       "tanggal": "13 - 14 Maret 2026",
       "penting": true
