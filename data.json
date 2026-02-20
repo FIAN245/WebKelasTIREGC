@@ -65,6 +65,14 @@
       "jam": "16:30 - 18:30 ",
       "ruang": "Lab Lanjut",
       "tipe": "Offline"
+    }, 
+    {
+      "hari": "Minggu",
+      "matkul": "Rangkaian Digital",
+      "dosen": "Bu Bayti",
+      "jam": "13:00 - 14:30",
+      "ruang": "Google Meet",
+      "tipe": "Online"
     }
   ],
   "tugas": [
