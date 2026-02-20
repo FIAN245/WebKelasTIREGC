@@ -172,6 +172,7 @@ h2 {
 }
 .status.offline { background: #e0f7fa; color: #006064; }
 .status.online { background: #fff3e0; color: #e65100; }
+.status.kosong { background: #ffebee; color: #c62828; } /* Warna merah untuk kelas kosong */
 
 /* --- TUGAS CARD --- */
 .tugas-card h3 { color: var(--primary-color); font-size: 1.1rem; }
