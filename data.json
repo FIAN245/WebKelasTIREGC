@@ -36,8 +36,16 @@
     },
     {
       "hari": "Sabtu",
-      "matkul": "Multimedia & Rangkaian Digital",
+      "matkul": "Multimedia",
       "dosen": "Bu Bayti",
+      "jam": "08:00 - 10:30",
+      "ruang": "Lab Dasar",
+      "tipe": "Kosong"
+    },
+    {
+      "hari": "Sabtu",
+      "matkul": "Pemrograman Sistem",
+      "dosen": "Pa Agys",
       "jam": "08:00 - 10:30",
       "ruang": "Lab Dasar",
       "tipe": "Offline"
@@ -55,14 +63,6 @@
       "matkul": "Pengolahan Citra Digital",
       "dosen": "Pa Bambang",
       "jam": "13:30 - 15:50",
-      "ruang": "Lab Lanjut",
-      "tipe": "Offline"
-    },
-        {
-      "hari": "Sabtu",
-      "matkul": "Pemrograman Sistem",
-      "dosen": "Pa Agys",
-      "jam": "16:30 - 18:30 ",
       "ruang": "Lab Lanjut",
       "tipe": "Offline"
     }, 
