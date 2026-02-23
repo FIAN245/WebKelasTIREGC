@@ -196,4 +196,28 @@ function renderDaftarMatkul(listJadwal) {
         li.style.borderBottom = "1px solid #eee";
         ul.appendChild(li);
     });
+    // --- FUNGSI WAKTU REAL-TIME ---
+function updateClock() {
+    const clockElement = document.getElementById('realtime-clock');
+    if (!clockElement) return; // Kalau elemennya nggak ada, lewati saja
+
+    const now = new Date();
+    
+    // Format Tanggal: Senin, 23 Februari 2026
+    const optionsDate = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
+    const dateString = now.toLocaleDateString('id-ID', optionsDate);
+    
+    // Format Jam: 09:35:42
+    const timeString = now.toLocaleTimeString('id-ID', { hour: '2-digit', minute: '2-digit', second: '2-digit' });
+    
+    // Gabungkan dan tampilkan
+    clockElement.innerText = `📅 ${dateString} | ⏰ ${timeString}`;
 }
+
+// Jalankan fungsinya setiap 1 detik (1000 milidetik)
+setInterval(updateClock, 1000);
+// Jalankan sekali saat halaman pertama kali dimuat
+updateClock();
+    
+}
+
