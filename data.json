@@ -8,18 +8,12 @@
   "pengumuman": [
     {
       "id": 1,
-      "text": "Mk Rangkaian Digital Online Jam 13:00 Minggu",
-      "tanggal": "22 Februari 2026",
-      "penting": true
-    },
-    {
-      "id": 2,
       "text": "Pembayaran UTS Ganjil TA 2025/2026",
       "tanggal": "09 - 28 Februari 2026",
       "penting": true
     },
     {
-      "id": 3,
+      "id": 2,
       "text": "Akan diadakan UTS Ganjil TA 2025/2026 Reguler C",
       "tanggal": "13 - 14 Maret 2026",
       "penting": true
@@ -36,17 +30,9 @@
     },
     {
       "hari": "Sabtu",
-      "matkul": "Multimedia",
+      "matkul": "Multimedia & RangkaianDigital",
       "dosen": "Bu Bayti",
-      "jam": "08:00 - 10:30",
-      "ruang": "Lab Dasar",
-      "tipe": "Kosong"
-    },
-    {
-      "hari": "Sabtu",
-      "matkul": "Pemrograman Sistem",
-      "dosen": "Pa Agys",
-      "jam": "08:40 - 10:30",
+      "jam": "08:00 - 10:00",
       "ruang": "Lab Dasar",
       "tipe": "Offline"
     },
@@ -55,24 +41,24 @@
       "matkul": "Etika dan Profesi",
       "dosen": "Bu Intan",
       "jam": "11:00 - 12:00",
-      "ruang": "Kondisional",
+      "ruang": "Google Meet",
       "tipe": "Online"
     },
         {
       "hari": "Sabtu",
       "matkul": "Pengolahan Citra Digital",
       "dosen": "Pa Bambang",
-      "jam": "13:30 - 15:50",
+      "jam": "13:00 - 14:30",
       "ruang": "Lab Lanjut",
       "tipe": "Offline"
     }, 
     {
-      "hari": "Minggu",
-      "matkul": "Rangkaian Digital",
-      "dosen": "Bu Bayti",
-      "jam": "13:00 - 14:30",
-      "ruang": "Google Meet",
-      "tipe": "Online"
+      "hari": "Sabtu",
+      "matkul": "Pemrograman Sistem",
+      "dosen": "Pa Agys",
+      "jam": "14:35 - 15:45",
+      "ruang": "Lab Lanjut",
+      "tipe": "Offline"
     }
   ],
   "tugas": [
