@@ -8,20 +8,20 @@
   "pengumuman": [
     {
       "id": 1,
-      "text": "Terakhir Pembayaran KI Teknik 2026",
-      "tanggal": "24 Maret 2026",
+      "text": "Pembayaran UTS Ganjil TA 2025/2026",
+      "tanggal": "09 - 28 Februari 2026",
       "penting": true
     },
     {
       "id": 2,
-      "text": "Pelaksanaan KI Teknik",
-      "tanggal": "31 Maret - 2 April 2026",
+      "text": "Akan diadakan UTS Ganjil TA 2025/2026 Reguler C",
+      "tanggal": "13 - 14 Maret 2026",
       "penting": true
     },
     {
       "id": 3,
-      "text": "UnDoing",
-      "tanggal": "69 Desember 2026",
+      "text": "Pelaksanaan KI Teknik",
+      "tanggal": "31 Maret - 2 April 2026",
       "penting": true
     }
   ],
@@ -70,21 +70,37 @@
   "tugas": [
     {
       "id": 1,
-      "matkul": "Null",
-      "judul": "Null",
+      "matkul": "Multimedia",
+      "judul": "Membuat Video Sinematik Soft selling PMB UMUS",
       "deadline": "15 Maret 2026",
-      "deskripsi": [,
-        "Null"
+      "deskripsi": [
+        "Tema Bebas",
+        "Definisi Soft Selling : https://stickearn.com/insights/category/blog/soft-selling-adalah/", 
+        "Kelompok 4 Orang",
+        "Kelompok dibentuk sendiri (sesuai kecocokan)",
+        "Silahkan isi kelompok kalian di link ini : https://docs.google.com/spreadsheets/d/170vTrkiJjsXKN5K80jGe0lDJhVBYE79MwWwcHKpXWN8/edit?usp=sharing",
+        "Outputnya Video format .mp4",
+        "Referensi: https://www.instagram.com/reel/DUbCwwbgRU5/?igsh=NnNkaGFjc3cyc2tz",
+        "Kirim Hasil Videonya ke Admin Alfian atau Surur yang nantinya akan di Upload Ke Tiktok Kelas",
+        "lalu yang sudah di upload videonya akan dikirimkan ke masing masing individu berupa Link Tiktoknya"
       ],
       "link_pengumpulan": "Kirim Langsung Ke Edlink"
     },
     {
       "id": 2,
-      "matkul": "Null",
-      "judul": "Null",
+      "matkul": "Multimedia",
+      "judul": "Revisi Poster/Banner Soft selling PMB UMUS",
       "deadline": "7 Maret 2026",
       "deskripsi": [
-        "Null:   "
+        "Bagi  yang merasa kurang benar dengan definisi dari Soft selling dari tugas #2 yang sudah dikirim sebelumnya,",
+        "Definisi Soft Selling : https://stickearn.com/insights/category/blog/soft-selling-adalah/", 
+        "Silahkan Bisa Perbaiki lalu kirim ke edlink bagian Revisi",
+        "Jangan lupa tambahkan logo yang terpilih : https://sg.docworkspace.com/d/sbPaeu3hTG5INSaA_yfghyz45e7kd2f89yr?lg=in-ID&sa=601.1074&ps=1&fn=Bagi%20TUGAS%20MK_MULTIMEDIA.docx", 
+        "Individu",
+        "Software/Aplikasi bebas",
+        "Ratio Gambar seperti Social Media", 
+        "Outputnya Dokumen format .PDF atau .jpg/png",
+        "Referensi:   "
       ],
       "link_pengumpulan": "Kirim Langsung Ke Edlink"
     }
