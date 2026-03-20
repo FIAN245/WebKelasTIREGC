@@ -4,6 +4,7 @@ document.addEventListener("DOMContentLoaded", () => {
         .then(response => response.json())
         .then(data => {
             renderIdentitas(data.identitas);
+            renderAdminProfile(data.identitas);
             renderPengumuman(data.pengumuman);
             renderJadwal(data.jadwal);
             renderTugasPreview(data.tugas);
@@ -175,4 +176,19 @@ function renderDaftarMatkul(listJadwal) {
         li.style.borderBottom = "1px solid #eee";
         ul.appendChild(li);
     });
+}
+// --- FUNGSI BARU UNTUK RENDER PROFIL ADMIN ---
+function renderAdminProfile(identitas) {
+    const adminImageElement = document.getElementById("admin-image");
+    const adminNameElement = document.getElementById("admin-name");
+    
+    if (adminImageElement) {
+        // Gunakan foto profil dari JSON, kalau kosong pakai default
+        adminImageElement.src = identitas.id_profile_img || "img/default_profile.png";
+    }
+    
+    if (adminNameElement) {
+        // Gunakan nama profil, kalau kosong pakai nama pembuat
+        adminNameElement.innerText = identitas.nama_profil || identitas.pembuat;
+    }
 }
