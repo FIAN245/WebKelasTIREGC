@@ -3,7 +3,9 @@
     "nama_kelas": "Teknik Informatika - Reguler C",
     "semester": "Semester 6",
     "kampus": "Fakultas Teknik",
-    "pembuat": "F2"
+    "pembuat": "F2",
+    "nama_profil": "Fian (F2)", 
+    "id_profile_img": "img/profile.png"
   },
   "pengumuman": [
     {
