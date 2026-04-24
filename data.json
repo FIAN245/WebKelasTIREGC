@@ -10,47 +10,47 @@
   "pengumuman": [
     {
       "id": 1,
-      "text": "Terakhir Pembayaran KI Teknik 2026",
-      "tanggal": "24 Maret 2026",
+      "text": "Terakhir Pembayaran KKN 2026",
+      "tanggal": "28 April 2026",
       "penting": true
     },
     {
       "id": 2,
-      "text": "Pelaksanaan KI Teknik",
-      "tanggal": "31 Maret - 2 April 2026",
+      "text": "Tugas Video dan Laporan KI Teknik 2026",
+      "tanggal": "31 Juni 2026",
       "penting": true
     }
   ],
   "jadwal": [
+     {
+      "hari": "Jumat",
+      "matkul": "Jaringan Syaraf Tiruan",
+      "dosen": "Pa Aries",
+      "jam": "19:30 - 20:30",
+      "ruang": "Google Meet",
+      "tipe": "Online"
+    },
     {
       "hari": "Sabtu",
-      "matkul": "Multimedia & RangkaianDigital",
+      "matkul": "Multimedia & Rangkaian Digital",
       "dosen": "Bu Bayti",
-      "jam": "08:00 - 10:00",
-      "ruang": "Lab Dasar",
-      "tipe": "Offline"
+      "jam": "09:00 - 10:30",
+      "ruang": "Google Meet",
+      "tipe": "Online"
     },
     {
       "hari": "Sabtu",
       "matkul": "Etika dan Profesi",
       "dosen": "Bu Intan",
       "jam": "11:00 - 12:00",
-      "ruang": "Google Meet",
-      "tipe": "Kosong"
+      "ruang": "Kondisional",
+      "tipe": "Offline"
     },
     {
       "hari": "Sabtu",
-      "matkul": "Jaringan Syaraf Tiruan",
-      "dosen": "Pa Aries",
-      "jam": "10:40 - 12:00",
-      "ruang": "Lab",
-      "tipe": "Offline"
-    },
-        {
-      "hari": "Sabtu",
       "matkul": "Pengolahan Citra Digital",
       "dosen": "Pa Bambang",
-      "jam": "13:00 - 14:30",
+      "jam": "13:30 - 15:50",
       "ruang": "Lab Lanjut",
       "tipe": "Offline"
     }, 
@@ -58,9 +58,9 @@
       "hari": "Sabtu",
       "matkul": "Pemrograman Sistem",
       "dosen": "Pa Agys",
-      "jam": "14:35 - 15:45",
+      "jam": "16:20 - 18:00",
       "ruang": "Lab Lanjut",
-      "tipe": "Kosong"
+      "tipe": "Offline"
     }
   ],
   "tugas": [
