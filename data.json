@@ -1,104 +1,104 @@
 {
-  "identitas": {
-    "nama_kelas": "Teknik Informatika - Reguler C",
-    "semester": "Semester 6",
-    "kampus": "Fakultas Teknik",
-    "pembuat": "F2",
-    "nama_profil": "TI REG C", 
-    "id_profile_img": "img/profile.png"
-  },
-  "pengumuman": [
-    {
-      "id": 1,
-      "text": "Terakhir Pembayaran KKN 2026",
-      "tanggal": "28 April 2026",
-      "penting": true
+    "identitas": {
+        "nama_kelas": "Teknik Informatika - Reguler C",
+        "semester": "Semester 6",
+        "kampus": "Fakultas Teknik",
+        "pembuat": "F2",
+        "nama_profil": "TI REG C",
+        "id_profile_img": "img/profile.png"
     },
-    {
-      "id": 2,
-      "text": "Tugas Video dan Laporan KI Teknik 2026",
-      "tanggal": "31 Juni 2026",
-      "penting": true
-    }
-  ],
-  "jadwal": [
-     {
-      "hari": "Jumat",
-      "matkul": "Jaringan Syaraf Tiruan",
-      "dosen": "Pa Aries",
-      "jam": "19:30 - 20:30",
-      "ruang": "Google Meet",
-      "tipe": "Online"
-    },
-    {
-      "hari": "Sabtu",
-      "matkul": "Multimedia & Rangkaian Digital",
-      "dosen": "Bu Bayti",
-      "jam": "09:00 - 10:30",
-      "ruang": "Google Meet",
-      "tipe": "Online"
-    },
-    {
-      "hari": "Sabtu",
-      "matkul": "Etika dan Profesi",
-      "dosen": "Bu Intan",
-      "jam": "11:00 - 12:00",
-      "ruang": "Kondisional",
-      "tipe": "Offline"
-    },
-    {
-      "hari": "Sabtu",
-      "matkul": "Pengolahan Citra Digital",
-      "dosen": "Pa Bambang",
-      "jam": "13:30 - 15:50",
-      "ruang": "Lab Lanjut",
-      "tipe": "Offline"
-    }, 
-    {
-      "hari": "Sabtu",
-      "matkul": "Pemrograman Sistem",
-      "dosen": "Pa Agys",
-      "jam": "16:20 - 18:00",
-      "ruang": "Lab Lanjut",
-      "tipe": "Offline"
-    }
-  ],
-  "tugas": [
-    {
-      "id": 1,
-      "matkul": "Null",
-      "judul": "Null",
-      "deadline": "15 Maret 2026",
-      "deskripsi": [
-        "Null",
-        "Null", 
-        "Null",
-        "Null",
-        "Null",
-        "Null",
-        "Null",
-        "Null",
-        "Null"
-      ],
-      "link_pengumpulan": "Kirim Langsung Ke Edlink"
-    },
-    {
-      "id": 2,
-      "matkul": "Null",
-      "judul": "Null",
-      "deadline": "7 Maret 2026",
-      "deskripsi": [
-        "Null",
-        "Null", 
-        "Null",
-        "Null", 
-        "Null",
-        "Null",
-        "Null", 
-        "Null",
-        "Null"
-      ],
-      "link_pengumpulan": "Kirim Langsung Ke Edlink"
-    }
-  ]
+    "pengumuman": [
+        {
+            "id": 1,
+            "text": "Terakhir Pembayaran KKN 2026",
+            "tanggal": "28 April 2026",
+            "penting": true
+        },
+        {
+            "id": 2,
+            "text": "Tugas Video dan Laporan KI Teknik 2026",
+            "tanggal": "31 Juni 2026",
+            "penting": true
+        }
+    ],
+    "jadwal": [
+        {
+            "hari": "Jumat",
+            "matkul": "Jaringan Syaraf Tiruan",
+            "dosen": "Pa Aries",
+            "jam": "08:00 - 10:30",
+            "ruang": "Gmeet",
+            "tipe": "Online"
+        },
+        {
+            "hari": "Sabtu",
+            "matkul": "Multimedia & Rangkaian Digital",
+            "dosen": "Bu Bayti",
+            "jam": "09:00 - 10:30",
+            "ruang": "Google Meet",
+            "tipe": "Online"
+        },
+        {
+            "hari": "Sabtu",
+            "matkul": "Etika dan Profesi",
+            "dosen": "Bu Intan",
+            "jam": "11:00 - 12:00",
+            "ruang": "Kondisional",
+            "tipe": "Offline"
+        },
+        {
+            "hari": "Sabtu",
+            "matkul": "Pengolahan Citra Digital",
+            "dosen": "Pa Bambang",
+            "jam": "13:30 - 15:50",
+            "ruang": "Lab Lanjut",
+            "tipe": "Offline"
+        },
+        {
+            "hari": "Sabtu",
+            "matkul": "Pemrograman Sistem",
+            "dosen": "Pa Agys",
+            "jam": "16:20 - 18:00",
+            "ruang": "Lab Lanjut",
+            "tipe": "Offline"
+        }
+    ],
+    "tugas": [
+        {
+            "id": 1,
+            "matkul": "Null",
+            "judul": "Null",
+            "deadline": "15 Maret 2026",
+            "deskripsi": [
+                "Null",
+                "Null",
+                "Null",
+                "Null",
+                "Null",
+                "Null",
+                "Null",
+                "Null",
+                "Null"
+            ],
+            "link_pengumpulan": "Kirim Langsung Ke Edlink"
+        },
+        {
+            "id": 2,
+            "matkul": "Null",
+            "judul": "Null",
+            "deadline": "7 Maret 2026",
+            "deskripsi": [
+                "Null",
+                "Null",
+                "Null",
+                "Null",
+                "Null",
+                "Null",
+                "Null",
+                "Null",
+                "Null"
+            ],
+            "link_pengumpulan": "Kirim Langsung Ke Edlink"
+        }
+    ]
 }
