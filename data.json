@@ -32,19 +32,19 @@
         },
         {
             "hari": "Sabtu",
+            "matkul": "Etika dan Profesi",
+            "dosen": "Bu Intan",
+            "jam": "09:00 - 10:00",
+            "ruang": "Gmeet",
+            "tipe": "Online"
+        },
+        {
+            "hari": "Sabtu",
             "matkul": "Multimedia & Rangkaian Digital",
             "dosen": "Bu Bayti",
             "jam": "09:00 - 10:30",
             "ruang": "Google Meet",
             "tipe": "Online"
-        },
-        {
-            "hari": "Sabtu",
-            "matkul": "Etika dan Profesi",
-            "dosen": "Bu Intan",
-            "jam": "11:00 - 12:00",
-            "ruang": "Kondisional",
-            "tipe": "Offline"
         },
         {
             "hari": "Sabtu",
