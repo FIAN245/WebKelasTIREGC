@@ -10,8 +10,8 @@
     "pengumuman": [
         {
             "id": 1,
-            "text": "Terakhir Pembayaran KKN 2026",
-            "tanggal": "28 April 2026",
+            "text": "Terakhir Pembayaran dan Pemberkasan KKN 2026",
+            "tanggal": "9 Mei 2026",
             "penting": true
         },
         {
@@ -66,39 +66,54 @@
     "tugas": [
         {
             "id": 1,
-            "matkul": "Null",
-            "judul": "Null",
-            "deadline": "15 Maret 2026",
+            "matkul": "Multimedia",
+            "judul": "membuat Video Edukasi",
+            "deadline": "9 Mei 2026",
             "deskripsi": [
-                "Null",
-                "Null",
-                "Null",
-                "Null",
-                "Null",
-                "Null",
-                "Null",
-                "Null",
-                "Null"
+                "Video Edukasi Animasi 2D",
+                "Durasi Minimal 3 menit",
+                "Minimal Terdapat Percakapan 2 Karakter",
+                "Pengerjaan boleh menggunakan apa aja (Canva,Flash,Animate, dsb)",
+                "Output Format Video",
+                "di Upload ke Youtube",
+                "Kirimkan Hasil Videonya ke Admin, nanti di up ke yt kelas",
+                "Nanti akan dapatkan Link Youtube yang akan dikirimkan ke Edlink Pribadi"
             ],
-            "link_pengumpulan": "Kirim Langsung Ke Edlink"
+            "link_pengumpulan": "Kirim Link Ke Edlink"
         },
         {
             "id": 2,
-            "matkul": "Null",
-            "judul": "Null",
-            "deadline": "7 Maret 2026",
+            "matkul": "Etika dan Profesi",
+            "judul": "Membuat makalah + Presentasi tentang etika dan profesi",
+            "deadline": "9 Mei 2026",
             "deskripsi": [
-                "Null",
-                "Null",
-                "Null",
-                "Null",
-                "Null",
-                "Null",
-                "Null",
-                "Null",
+                "buat makalah yang berhubungan dengan Etika dan profesi beserta Studi kasusnya",
+                "Nantinya akan dipresentasikan saat dikelas (jelaskan saja ringkasan ringkasannya)",
+                "Struktur Makalah secara umum",
+                "Ukuran Halaman A4",
+                "Makalah Di cetak dan Diilid",
+                "Sampul / Cover warna Biru Telor Asin",
+                "Tugas akan Dikumpulkan sekalian setelah Presentasi",
                 "Null"
             ],
-            "link_pengumpulan": "Kirim Langsung Ke Edlink"
+            "link_pengumpulan": "Kumpulkan langsung dikelas"
+        },
+         {
+            "id": 3,
+            "matkul": "Kunjungan Industri Teknik 2026",
+            "judul": "Membuat Video dan Laporan KI",
+            "deadline": "30 Juni 2026",
+            "deskripsi": [
+                "Membuat Video tentang Teknologi yang ada / digunakan di Instansi yang dipilih",
+                "Video Berdurasi 3 - 5 Menit",
+                "Elemen dalam Video boleh digabung dengan gambar gambar dari internet asal menarik",
+                "Hasil Video di Upload ke Youtube lalu Kumpukan Berupa Link (perwakilan ketua saja)",
+                "Membuat Laporan Ilmiah Kegiatan (Pendahuluan, Profil Perusahaan, Pembahasan saat Kunjungan, Kesimpulan dan Saran)",
+                "Laporan di Cetak dan Dijilid Mirip seperti Skripsi",
+                "Ukuran A4, Sampul Hardcover, Biru Tua",
+                "Kumpulkan (Perwakilan) langsung ke Pa Bambang"
+            ],
+            "link_pengumpulan": "Kumpulkan langsung Pa Bambang"
         }
     ]
 }
