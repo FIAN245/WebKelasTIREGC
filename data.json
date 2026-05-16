@@ -86,18 +86,20 @@
         },
         {
             "id": 2,
-            "matkul": "Etika dan Profesi",
-            "judul": "Membuat makalah + Presentasi tentang etika dan profesi",
-            "deadline": "9 Mei 2026",
+            "matkul": "Pengolahan Citra Digital",
+            "judul": "buat video proses pembuatan sistem deteksi gambar",
+            "deadline": "9 Juni 2026",
             "deskripsi": [
-                "buat makalah yang berhubungan dengan Etika dan profesi beserta Studi kasusnya",
-                "Nantinya akan dipresentasikan saat dikelas (jelaskan saja ringkasan ringkasannya)",
-                "Struktur Makalah secara umum",
-                "Ukuran Halaman A4",
-                "Makalah Di cetak dan Diilid",
-                "Sampul / Cover warna Biru Telor Asin",
-                "Tugas akan Dikumpulkan sekalian setelah Presentasi",
-                "Null"
+                "Buat Sistem Deteksi Gambar yang meliputi Klasifikasi, Deteksi, Kualifikasi",
+                "Objek visual nya bebas boleh buah, mobil, dan sebagainya ",
+                "sistem deteksi gambar boleh pake matlab atau python",
+                "Setiap Mahasiswa judulnya harus beda  (jika ada yang sama, harus segera ganti)",
+                "Praktekan lalu di rekam layar proses nya dalam bentuk video seperti tutorial ",
+                " hasilnya berupa video",
+                "Ada narasi / penjelasannya",
+                "Hasil akhir format Video .mp4",
+                "Kirimkan ke Edlink",
+                "Terakhir dikumpulkan sehari sebelum UAS dilaksanakan"
             ],
             "link_pengumpulan": "Kumpulkan langsung dikelas"
         },
