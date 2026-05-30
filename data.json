@@ -103,8 +103,22 @@
             ],
             "link_pengumpulan": "Kumpulkan langsung dikelas"
         },
-         {
+          {
             "id": 3,
+            "matkul": "Multimedia",
+            "judul": "buat video animasi 3D Promosi TI UMUS",
+            "deadline": "6  Juni 2026",
+            "deskripsi": [
+                "Buatlah Prompt untuk AI Video tentang Promosi Teknik Informatika Kampus UMUS",
+                "durasi bebas (mungkin sekitar 1 menit)",	
+                "Prompt yang digunakan tadi, nanti di tulis tangan di lembar jawab UAS saat pelaksanaan",
+                "Tugas Individu",
+                "Video yang sudah jadi di upload ke YT pribadi lalu kirimkan link nya ke Edlink"
+            ],
+            "link_pengumpulan": "Kumpulkan langsung dikelas"
+        },
+         {
+            "id": 4,
             "matkul": "Kunjungan Industri Teknik 2026",
             "judul": "Membuat Video dan Laporan KI",
             "deadline": "30 Juni 2026",
