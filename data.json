@@ -82,7 +82,7 @@
                 "Admin sigma akan mengupload video setiap mahasiswa ke youtube yang nantinya akan dikumpukan kedalam excel",
                 "Terakhir dikumpulkan sehari sebelum UAS dilaksanakan"
             ],
-            "link_pengumpulan": "Kirim Link Ke Edlink"
+            "link_pengumpulan": "Kirim Link Ke Admin Sigma"
         },
         {
             "id": 2,
@@ -101,7 +101,7 @@
                 "Kirimkan ke Edlink",
                 "Terakhir dikumpulkan sehari sebelum UAS dilaksanakan"
             ],
-            "link_pengumpulan": "Kumpulkan langsung dikelas"
+            "link_pengumpulan": "Kirim link yt langsung ke Edlink"
         },
           {
             "id": 3,
@@ -115,7 +115,7 @@
                 "Tugas Individu",
                 "Video yang sudah jadi di upload ke YT pribadi lalu kirimkan link nya ke Edlink"
             ],
-            "link_pengumpulan": "Kumpulkan langsung dikelas"
+            "link_pengumpulan": "Kirim Link ke Edlink"
         },
          {
             "id": 4,
