@@ -40,14 +40,6 @@
         },
         {
             "hari": "Sabtu",
-            "matkul": "Etika dan Profesi",
-            "dosen": "Bu Intan",
-            "jam": "11:00 - 12:00",
-            "ruang": "Kelas",
-            "tipe": "Offline"
-        },
-        {
-            "hari": "Sabtu",
             "matkul": "Pemrograman Jaringan",
             "dosen": "Pa Agung Ragil",
             "jam": "09:45 - 11:30",
