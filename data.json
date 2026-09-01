@@ -24,19 +24,19 @@
     "jadwal": [
         {
             "hari": "Jumat",
-            "matkul": "Jaringan Syaraf Tiruan",
-            "dosen": "Pa Aries",
+            "matkul": "Deep Learning",
+            "dosen": "Pa Agys",
             "jam": "19:30 - 20:30",
             "ruang": "Gmeet",
             "tipe": "Online"
         },
         {
             "hari": "Sabtu",
-            "matkul": "Multimedia & Rangkaian Digital",
-            "dosen": "Bu Bayti",
-            "jam": "09:00 - 10:30",
-            "ruang": "Google Meet",
-            "tipe": "Online"
+            "matkul": "Data Mining",
+            "dosen": "Bu Aries",
+            "jam": "08:00 - 09:45",
+            "ruang": "Lab Dasar",
+            "tipe": "Offline"
         },
         {
             "hari": "Sabtu",
@@ -48,17 +48,25 @@
         },
         {
             "hari": "Sabtu",
-            "matkul": "Pengolahan Citra Digital",
-            "dosen": "Pa Bambang",
-            "jam": "13:30 - 15:50",
+            "matkul": "Pemrograman Jaringan",
+            "dosen": "Pa Agung Ragil",
+            "jam": "09:45 - 11:30",
+            "ruang": "Lab Dasar",
+            "tipe": "Offline"
+        },
+        {
+            "hari": "Sabtu",
+            "matkul": "Desain Animasi",
+            "dosen": "Pa Agung Ragil",
+            "jam": "13:00 - 14:45",
             "ruang": "Lab Lanjut",
             "tipe": "Offline"
         },
         {
             "hari": "Sabtu",
-            "matkul": "Pemrograman Sistem",
-            "dosen": "Pa Agys",
-            "jam": "15:52 - 17:00",
+            "matkul": "Analisis Big Data",
+            "dosen": "Pa Bambang",
+            "jam": "14:45 - 15:55",
             "ruang": "Lab Lanjut",
             "tipe": "Offline"
         }
