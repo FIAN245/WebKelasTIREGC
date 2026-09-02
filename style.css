@@ -295,3 +295,139 @@ footer {
         font-size: 1.5rem;
     }
 }
+/* --- HERO BANNER DYNAMIC --- */
+.dynamic-hero {
+    position: relative;
+    overflow: hidden;
+    border-radius: var(--border-radius);
+    margin-bottom: 30px;
+    min-height: 350px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--white);
+    text-align: center;
+    box-shadow: var(--shadow);
+    background-color: var(--dark-bg); /* Fallback jika video gagal dimuat */
+}
+
+.hero-video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    transform: translateX(-50%) translateY(-50%);
+    z-index: 1;
+    object-fit: cover;
+    opacity: 0.6; /* Membuat video sedikit gelap */
+}
+
+.hero-overlay {
+    position: absolute;
+    top: 0; left: 0; width: 100%; height: 100%;
+    /* Overlay Biru Transparan agar senada dengan tema */
+    background: linear-gradient(rgba(0, 74, 173, 0.5), rgba(30, 30, 36, 0.8));
+    z-index: 2;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 3;
+    padding: 20px;
+    width: 100%;
+}
+
+.quote-container {
+    margin-top: 25px;
+    min-height: 60px;
+    font-style: italic;
+    font-weight: 300;
+    font-size: 1.1rem;
+    color: #f4f7f6;
+}
+
+.hero-quote {
+    transition: opacity 0.5s ease-in-out;
+    opacity: 1;
+}
+
+.hero-quote.fade-out {
+    opacity: 0;
+}
+
+/* --- DASHBOARD STATISTIK --- */
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 15px;
+    margin-bottom: 25px;
+}
+
+.stat-card {
+    background: var(--white);
+    padding: 20px;
+    border-radius: var(--border-radius);
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    text-align: center;
+    border-bottom: 4px solid var(--primary-color);
+}
+
+.stat-highlight {
+    border-bottom: 4px solid var(--accent-color);
+    background-color: #fffdfa;
+}
+
+.stat-card h3 {
+    font-size: 0.9rem;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+.stat-number {
+    font-size: 2.2rem;
+    font-weight: bold;
+    color: var(--primary-color);
+}
+
+.stat-text {
+    font-size: 1rem;
+    font-weight: bold;
+    color: var(--accent-color);
+    line-height: 1.4;
+}
+
+/* Progress Bar Style */
+.progress-container {
+    background: var(--white);
+    padding: 15px 20px;
+    border-radius: var(--border-radius);
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+.progress-info {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    font-weight: 600;
+    font-size: 0.95rem;
+    color: var(--text-color);
+}
+
+.progress-bar-bg {
+    width: 100%;
+    height: 14px;
+    background: #e0e0e0;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.progress-bar-fill {
+    height: 100%;
+    background: linear-gradient(90deg, var(--primary-color), var(--accent-color));
+    width: 0%;
+    border-radius: 10px;
+    transition: width 1.2s cubic-bezier(0.1, 0.7, 0.1, 1); /* Animasi smooth */
+}
