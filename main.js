@@ -10,7 +10,9 @@ document.addEventListener("DOMContentLoaded", () => {
             renderTugasPreview(data.tugas);
             renderAllTugas(data.tugas);
             renderProfilKelas(data.identitas);
-            renderDaftarMatkul(data.jadwal); 
+            renderDaftarMatkul(data.jadwal);
+            hitungStatistikTugas(data.tugas);
+            startQuoteRotation();
         })
         .catch(error => console.error('Gagal mengambil data:', error));
 
@@ -191,4 +193,117 @@ function renderAdminProfile(identitas) {
         // Gunakan nama profil, kalau kosong pakai nama pembuat
         adminNameElement.innerText = identitas.nama_profil || identitas.pembuat;
     }
+}
+// ==========================================
+// FITUR 1: ROTASI KATA MUTIARA HERO BANNER
+// ==========================================
+const quotes = [
+    "\"The Blueprint is drawn, the Seal is set. When the Clock striketh the Thirteenth Hour, the Unseen shall become the Only Truth.\"",
+    "\"Seperti Neural Network, pemahaman kita dibangun dengan terus belajar dan beradaptasi dari setiap error.\"",
+    "\"Di lautan Big Data yang acak, pola yang tepat akan memandu kita pada inovasi.\"",
+    "\"Melihat dunia tidak hanya dengan mata, tetapi melalui matriks, piksel, dan algoritma.\"",
+    "\"Sistem yang tangguh selalu berawal dari koneksi dan arsitektur yang tak terputus.\""
+];
+
+let quoteIndex = 0;
+
+function startQuoteRotation() {
+    const quoteEl = document.getElementById("hero-quote");
+    if (!quoteEl) return; // Hanya jalankan jika ada elemennya (di halaman index)
+
+    // Set teks awal
+    quoteEl.innerText = quotes[quoteIndex];
+
+    setInterval(() => {
+        // Beri efek fade-out
+        quoteEl.classList.add("fade-out");
+        
+        setTimeout(() => {
+            // Ganti teks saat tulisan sedang menghilang
+            quoteIndex = (quoteIndex + 1) % quotes.length;
+            quoteEl.innerText = quotes[quoteIndex];
+            
+            // Beri efek fade-in
+            quoteEl.classList.remove("fade-out");
+        }, 500); // Sinkronkan dengan 0.5s durasi transisi di CSS
+        
+    }, 6000); // Ganti kalimat setiap 6 detik
+}
+
+// ==========================================
+// FITUR 2: KALKULASI DASHBOARD STATISTIK
+// ==========================================
+function hitungStatistikTugas(listTugas) {
+    const elTotal = document.getElementById("stat-total");
+    if (!elTotal) return; // Hentikan fungsi jika bukan di halaman index
+
+    const elSelesai = document.getElementById("stat-selesai");
+    const elSisa = document.getElementById("stat-sisa");
+    const elDeadline = document.getElementById("stat-deadline");
+    const elProgressText = document.getElementById("progress-text");
+    const elProgressBar = document.getElementById("progress-bar-fill");
+
+    if (!listTugas || listTugas.length === 0) return;
+
+    let total = listTugas.length;
+    let selesai = 0;
+    let sisa = 0;
+    
+    let terdekatTeks = null;
+    let jarakTerdekat = Infinity;
+
+    // Reset waktu ke jam 00:00:00 hari ini untuk kalkulasi jarak hari yang akurat
+    const now = new Date();
+    now.setHours(0, 0, 0, 0);
+
+    const bulanIndo = { "januari":0, "februari":1, "maret":2, "april":3, "mei":4, "juni":5, "juli":6, "agustus":7, "september":8, "oktober":9, "november":10, "desember":11 };
+    
+    listTugas.forEach(tugas => {
+        let parseDate = null;
+        // Membaca string format "12 Juni 2026" dari JSON
+        let parts = tugas.deadline.toLowerCase().split(" ");
+        if (parts.length >= 3) {
+            let d = parseInt(parts[0]);
+            let m = bulanIndo[parts[1]];
+            let y = parseInt(parts[2]);
+            if (!isNaN(d) && m !== undefined && !isNaN(y)) {
+                parseDate = new Date(y, m, d);
+            }
+        }
+
+        if (parseDate) {
+            let selisihWaktu = parseDate.getTime() - now.getTime();
+            let selisihHari = Math.ceil(selisihWaktu / (1000 * 3600 * 24));
+
+            if (selisihHari < 0) {
+                // Jika deadline sudah terlewat dari hari ini
+                selesai++;
+            } else {
+                // Jika deadline hari ini (0) atau di masa depan (>0)
+                sisa++;
+                if (selisihHari < jarakTerdekat) {
+                    jarakTerdekat = selisihHari;
+                    terdekatTeks = `${tugas.matkul}<br><span style="font-size:0.85rem; color:#666; font-weight:normal;">${selisihHari === 0 ? 'HARI INI!' : selisihHari + ' hari lagi'}</span>`;
+                }
+            }
+        } else {
+            // Jika penulisan JSON tidak standar, anggap saja tugas belum selesai
+            sisa++; 
+        }
+    });
+
+    // Injeksi angka ke HTML
+    elTotal.innerText = total;
+    elSelesai.innerText = selesai;
+    elSisa.innerText = sisa;
+    elDeadline.innerHTML = terdekatTeks ? terdekatTeks : "Semua Selesai";
+
+    // Hitung persentase untuk Progress Bar
+    let persentase = total === 0 ? 0 : Math.round((selesai / total) * 100);
+    elProgressText.innerText = persentase + "%";
+    
+    // Beri sedikit jeda 0.3 detik agar bar teranimasi dari 0 ke persentase aslinya saat halaman dimuat
+    setTimeout(() => {
+        elProgressBar.style.width = persentase + "%";
+    }, 300);
 }
