@@ -23,11 +23,54 @@
 
     <div class="container">
         
-        <header class="hero">
-            <h1 id="header-sapaan">Halo, Sobat Informatika!</h1>
-            <div id="realtime-clock" class="realtime-clock">Memuat waktu...</div>
-            <p>Portal informasi resmi kelas <span id="nama-kelas-display">...</span></p>
+<header class="hero dynamic-hero">
+            <video autoplay loop muted playsinline class="hero-video">
+                <source src="img/video-bg.mp4" type="video/mp4">
+            </video>
+            <div class="hero-overlay"></div>
+            
+            <div class="hero-content">
+                <h1 id="header-sapaan">Halo, Sobat Informatika!</h1>
+                <div id="realtime-clock" class="realtime-clock">Memuat waktu...</div>
+                <p>Portal informasi resmi kelas <span id="nama-kelas-display">...</span></p>
+                
+                <div class="quote-container">
+                    <p id="hero-quote" class="hero-quote">"Memuat transmisi data..."</p>
+                </div>
+            </div>
         </header>
+
+        <section class="section-box" id="dashboard-statistik">
+            <h2>📊 Dashboard Statistik Kelas</h2>
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <h3>Total Tugas</h3>
+                    <p id="stat-total" class="stat-number">0</p>
+                </div>
+                <div class="stat-card">
+                    <h3>Tugas Selesai</h3>
+                    <p id="stat-selesai" class="stat-number">0</p>
+                </div>
+                <div class="stat-card">
+                    <h3>Sedang Berjalan</h3>
+                    <p id="stat-sisa" class="stat-number">0</p>
+                </div>
+                <div class="stat-card stat-highlight">
+                    <h3>Deadline Terdekat</h3>
+                    <p id="stat-deadline" class="stat-text">-</p>
+                </div>
+            </div>
+            
+            <div class="progress-container">
+                <div class="progress-info">
+                    <span>Progress Penyelesaian Tugas Semester Ini</span>
+                    <span id="progress-text">0%</span>
+                </div>
+                <div class="progress-bar-bg">
+                    <div id="progress-bar-fill" class="progress-bar-fill"></div>
+                </div>
+            </div>
+        </section>
 
         <section class="section-box">
             <h2>📢 Pengumuman Terbaru</h2>
