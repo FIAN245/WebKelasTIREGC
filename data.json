@@ -66,73 +66,42 @@
     "tugas": [
         {
             "id": 1,
-            "matkul": "Jaringan Syaraf Tiruan",
-            "judul": "PROJECT UAS: Review Jurnal atau Deteksi Gambar",
-            "deadline": "12 Juni 2026",
+            "matkul": "null",
+            "judul": "null",
+            "deadline": "null",
             "deskripsi": [
-                "Terdapat 2 Opsi yaitu Review Jurnal atau Membuat Sistem Deteksi (Pilh Salah Satu)",
-                "Opsi Review Jurnal itu dibaca. Dipahami, lalu di analisa datanya, dihitung ulang, bandingkan apakah datanya ada perubahan atau sama (boleh menggunakan perhitungan di Excel atau Matlab)",
-                "Opsi membuat sistem deteksi gambar boleh pake matlab atau python",
-                "Setiap Mahasiswa judulnya harus beda (jika ada yang sama, harus segera ganti) isi judul kalian di link ini : https://docs.google.com/spreadsheets/d/1jXfGZn7cqgNaqYu1F-lIGdY9KrREZutUghtzMerykLs/edit?usp=sharing",
-                "Praktekan lalu di rekam layar dalam bentuk video",
-                "Semua opsi hasilnya berupa video",
-                "Ada narasi / penjelasannya",
-                "Hasil akhir format Video .mp4",
-                "Kirimkan ke Atmin Sigma",
-                "Admin sigma akan mengupload video setiap mahasiswa ke youtube yang nantinya akan dikumpukan kedalam excel",
-                "Terakhir dikumpulkan sehari sebelum UAS dilaksanakan"
+                "null",
+                "null",
+                "null",
+                "null",
+                "null",
+                "null",
+                "null",
+                "null",
+                "null",
+                "null",
+                "null"
             ],
-            "link_pengumpulan": "Kirim Link Ke Admin Sigma"
+            "link_pengumpulan": "Kirim Link Ke null"
         },
         {
             "id": 2,
-            "matkul": "Pengolahan Citra Digital",
-            "judul": "buat video proses pembuatan sistem deteksi gambar",
-            "deadline": "9 Juni 2026",
+            "matkul": "null",
+            "judul": "null",
+            "deadline": "null",
             "deskripsi": [
-                "Buat Sistem Deteksi Gambar yang meliputi Klasifikasi, Deteksi, Kualifikasi",
-                "Objek visual nya bebas boleh buah, mobil, dan sebagainya ",
-                "sistem deteksi gambar boleh pake matlab atau python",
-                "Setiap Mahasiswa judulnya harus beda  (jika ada yang sama, harus segera ganti) isi judul kalian di link ini : https://docs.google.com/spreadsheets/d/1jXfGZn7cqgNaqYu1F-lIGdY9KrREZutUghtzMerykLs/edit?usp=sharing",
-                "Praktekan lalu di rekam layar proses nya dalam bentuk video seperti tutorial ",
-                " hasilnya berupa video",
-                "Ada narasi / penjelasannya",
-                "Hasil akhir format Video .mp4",
-                "Kirimkan ke Edlink",
-                "Terakhir dikumpulkan sehari sebelum UAS dilaksanakan"
+                "null",
+                "null",
+                "null",
+                "null",
+                "null",
+                "null",
+                "null",
+                "null",
+                "null",
+                "null"
             ],
-            "link_pengumpulan": "Kirim link yt langsung ke Edlink"
-        },
-          {
-            "id": 3,
-            "matkul": "Multimedia",
-            "judul": "buat video animasi 3D Promosi TI UMUS",
-            "deadline": "6  Juni 2026",
-            "deskripsi": [
-                "Buatlah Prompt untuk AI Video tentang Promosi Teknik Informatika Kampus UMUS",
-                "durasi bebas (mungkin sekitar 1 menit)",	
-                "Prompt yang digunakan tadi, nanti di tulis tangan di lembar jawab UAS saat pelaksanaan",
-                "Tugas Individu",
-                "Video yang sudah jadi di upload ke YT pribadi lalu kirimkan link nya ke Edlink"
-            ],
-            "link_pengumpulan": "Kirim Link ke Edlink"
-        },
-         {
-            "id": 4,
-            "matkul": "Kunjungan Industri Teknik 2026",
-            "judul": "Membuat Video dan Laporan KI",
-            "deadline": "30 Juni 2026",
-            "deskripsi": [
-                "Membuat Video tentang Teknologi yang ada / digunakan di Instansi yang dipilih",
-                "Video Berdurasi 3 - 5 Menit",
-                "Elemen dalam Video boleh digabung dengan gambar gambar dari internet asal menarik",
-                "Hasil Video di Upload ke Youtube lalu Kumpukan Berupa Link (perwakilan ketua saja)",
-                "Membuat Laporan Ilmiah Kegiatan (Pendahuluan, Profil Perusahaan, Pembahasan saat Kunjungan, Kesimpulan dan Saran)",
-                "Laporan di Cetak dan Dijilid Mirip seperti Skripsi",
-                "Ukuran A4, Sampul Hardcover, Biru Tua",
-                "Kumpulkan (Perwakilan) langsung ke Pa Bambang"
-            ],
-            "link_pengumpulan": "Kumpulkan langsung Pa Bambang"
+            "link_pengumpulan": "Kirim link yt langsung ke null"
         }
     ]
 }
