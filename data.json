@@ -28,12 +28,12 @@
             "dosen": "Pa Agys",
             "jam": "19:30 - 20:30",
             "ruang": "Gmeet",
-            "tipe": "Online"
+            "tipe": "Kosong"
         },
         {
             "hari": "Sabtu",
             "matkul": "Data Mining",
-            "dosen": "Bu Aries",
+            "dosen": "Pa Aries",
             "jam": "08:00 - 09:45",
             "ruang": "Lab Dasar",
             "tipe": "Offline"
@@ -42,9 +42,9 @@
             "hari": "Sabtu",
             "matkul": "Pemrograman Jaringan",
             "dosen": "Pa Agung Ragil",
-            "jam": "09:45 - 11:30",
-            "ruang": "Lab Dasar",
-            "tipe": "Offline"
+            "jam": "10:00 - 11:30",
+            "ruang": "Google Meet",
+            "tipe": "Online"
         },
         {
             "hari": "Sabtu",
@@ -52,7 +52,7 @@
             "dosen": "Pa Agung Ragil",
             "jam": "13:00 - 14:45",
             "ruang": "Lab Lanjut",
-            "tipe": "Offline"
+            "tipe": "Kosong"
         },
         {
             "hari": "Sabtu",
