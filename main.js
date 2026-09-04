@@ -307,3 +307,36 @@ function hitungStatistikTugas(listTugas) {
         elProgressBar.style.width = persentase + "%";
     }, 300);
 }
+// ==========================================
+// FITUR 3: ANIMASI UI LANJUTAN DENGAN GSAP
+// ==========================================
+function jalankanAnimasiGSAP() {
+    // Pastikan GSAP sudah ter-load
+    if (typeof gsap === 'undefined') return;
+
+    // 1. Animasi Navbar (Turun dari atas)
+    gsap.from(".navbar", { y: -50, opacity: 0, duration: 0.8, ease: "power3.out" });
+
+    // 2. Animasi Hero Banner (Muncul perlahan)
+    gsap.from(".hero-content", { y: 30, opacity: 0, duration: 1, delay: 0.2, ease: "power3.out" });
+
+    // 3. Animasi Staggered untuk Card Statistik (Muncul berurutan bergelombang)
+    gsap.from(".stat-card", {
+        opacity: 0,
+        y: 40,
+        duration: 0.8,
+        stagger: 0.15, // Jeda antar card
+        ease: "back.out(1.2)", // Efek pantulan elastis
+        delay: 0.5
+    });
+
+    // 4. Animasi Daftar Pengumuman dan Tabel Jadwal
+    gsap.from(".card-container > .card, .table-responsive", {
+        opacity: 0,
+        y: 20,
+        duration: 0.6,
+        stagger: 0.1,
+        ease: "power2.out",
+        delay: 0.8
+    });
+}
