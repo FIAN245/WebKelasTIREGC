@@ -6,6 +6,23 @@
     <title>Profil Kelas - TI Reg C</title>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <!-- 1. Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- 2. Konfigurasi Warna Tailwind agar sesuai dengan style.css kamu -->
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              primary: '#004aad',
+              accent: '#ff9100',
+              darkbg: '#1e1e24',
+              lightbg: '#f4f7f6'
+            }
+          }
+        }
+      }
+    </script>
 </head>
 <body>
 
@@ -32,20 +49,20 @@
             </div>
         </section>
         <section class="section-box">
-            <h2>🎓 Identitas Kelas</h2>
+            <h2>Identitas Kelas</h2>
             <div id="profil-kelas-card" class="card profil-card-kelas">
                 <p>Memuat data...</p>
             </div>
         </section>
 
         <section class="section-box">
-            <h2>📚 Mata Kuliah Semester Ini</h2>
+            <h2>Mata Kuliah Semester Ini</h2>
             <ul id="daftar-matkul-list" class="matkul-list">
                 </ul>
         </section>
 
         <section class="section-box">
-            <h2>💻 Developer</h2>
+            <h2>Developer</h2>
             <div class="card">
                 <p>Website ini dibuat untuk Mempermudah Perubahan Suatu Informasi Dari Sisi Mahasiswa.</p>
                 <p><strong>Developed by:</strong> <span id="dev-name-profile">...</span></p>
@@ -59,6 +76,7 @@
         <p>&copy; 2069 <span id="footer-year"></span> Created by <span id="dev-name">...</span></p>
     </footer>
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
     <script src="main.js"></script>
 </body>
 </html>
