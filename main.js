@@ -13,6 +13,7 @@ document.addEventListener("DOMContentLoaded", () => {
             renderDaftarMatkul(data.jadwal);
             hitungStatistikTugas(data.tugas);
             startQuoteRotation();
+            setTimeout(() => { jalankanAnimasiGSAP(); }, 100);
         })
         .catch(error => console.error('Gagal mengambil data:', error));
 
