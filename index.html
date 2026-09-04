@@ -6,6 +6,24 @@
     <title>Portal Kelas T.Informatika</title>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+
+    <!-- 1. Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- 2. Konfigurasi Warna Tailwind agar sesuai dengan style.css kamu -->
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              primary: '#004aad',
+              accent: '#ff9100',
+              darkbg: '#1e1e24',
+              lightbg: '#f4f7f6'
+            }
+          }
+        }
+      }
+    </script>
 </head>
 <body>
 
@@ -41,25 +59,25 @@
         </header>
 
         <section class="section-box" id="dashboard-statistik">
-            <h2>📊 Dashboard Statistik Kelas</h2>
-            <div class="stats-grid">
-                <div class="stat-card">
-                    <h3>Total Tugas</h3>
-                    <p id="stat-total" class="stat-number">0</p>
-                </div>
-                <div class="stat-card">
-                    <h3>Tugas Selesai</h3>
-                    <p id="stat-selesai" class="stat-number">0</p>
-                </div>
-                <div class="stat-card">
-                    <h3>Sedang Berjalan</h3>
-                    <p id="stat-sisa" class="stat-number">0</p>
-                </div>
-                <div class="stat-card stat-highlight">
-                    <h3>Deadline Terdekat</h3>
-                    <p id="stat-deadline" class="stat-text">-</p>
-                </div>
-            </div>
+            <h2>Dashboard Statistik Kelas</h2>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-6">
+    <div class="stat-card bg-white p-5 rounded-xl shadow-sm border-b-4 border-primary hover:-translate-y-1 hover:shadow-md transition-all duration-300">
+        <h3 class="text-gray-500 text-sm font-semibold mb-2">Total Tugas</h3>
+        <p id="stat-total" class="text-4xl font-bold text-primary">0</p>
+    </div>
+    <div class="stat-card bg-white p-5 rounded-xl shadow-sm border-b-4 border-primary hover:-translate-y-1 hover:shadow-md transition-all duration-300">
+        <h3 class="text-gray-500 text-sm font-semibold mb-2">Tugas Selesai</h3>
+        <p id="stat-selesai" class="text-4xl font-bold text-green-500">0</p>
+    </div>
+    <div class="stat-card bg-white p-5 rounded-xl shadow-sm border-b-4 border-primary hover:-translate-y-1 hover:shadow-md transition-all duration-300">
+        <h3 class="text-gray-500 text-sm font-semibold mb-2">Sedang Berjalan</h3>
+        <p id="stat-sisa" class="text-4xl font-bold text-accent">0</p>
+    </div>
+    <div class="stat-card bg-orange-50 p-5 rounded-xl shadow-sm border-b-4 border-accent hover:-translate-y-1 hover:shadow-md transition-all duration-300">
+        <h3 class="text-gray-500 text-sm font-semibold mb-2">Deadline Terdekat</h3>
+        <p id="stat-deadline" class="text-lg font-bold text-accent leading-tight">-</p>
+    </div>
+</div>
             
             <div class="progress-container">
                 <div class="progress-info">
@@ -111,6 +129,8 @@
         <p>&copy; 2026 <span id="footer-year"></span> Created by <span id="dev-name">...</span></p>
     </footer>
 
+    <script src="main.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
     <script src="main.js"></script>
 </body>
 </html>
