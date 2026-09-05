@@ -9,9 +9,12 @@
 
     <!-- 1. Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
-    <!-- 2. Konfigurasi Warna Tailwind agar sesuai dengan style.css kamu -->
+    <!-- 2. Konfigurasi Warna Tailwind -->
     <script>
       tailwind.config = {
+          corePlugins: {
+          preflight: false,
+          },
         theme: {
           extend: {
             colors: {
@@ -61,21 +64,23 @@
         <section class="section-box" id="dashboard-statistik">
             <h2>Dashboard Statistik Kelas</h2>
 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-6">
-    <div class="stat-card bg-white p-5 rounded-xl shadow-sm border-b-4 border-primary hover:-translate-y-1 hover:shadow-md transition-all duration-300">
+    <div class="stat-card bg-white p-5 rounded-xl shadow-sm border-b-4 border-primary hover:shadow-lg transition-shadow duration-300">
         <h3 class="text-gray-500 text-sm font-semibold mb-2">Total Tugas</h3>
         <p id="stat-total" class="text-4xl font-bold text-primary">0</p>
     </div>
-    <div class="stat-card bg-white p-5 rounded-xl shadow-sm border-b-4 border-primary hover:-translate-y-1 hover:shadow-md transition-all duration-300">
+    <div class="stat-card bg-white p-5 rounded-xl shadow-sm border-b-4 border-primary hover:shadow-lg transition-shadow duration-300">
         <h3 class="text-gray-500 text-sm font-semibold mb-2">Tugas Selesai</h3>
         <p id="stat-selesai" class="text-4xl font-bold text-green-500">0</p>
     </div>
-    <div class="stat-card bg-white p-5 rounded-xl shadow-sm border-b-4 border-primary hover:-translate-y-1 hover:shadow-md transition-all duration-300">
+    <div class="stat-card bg-white p-5 rounded-xl shadow-sm border-b-4 border-primary hover:shadow-lg transition-shadow duration-300">
         <h3 class="text-gray-500 text-sm font-semibold mb-2">Sedang Berjalan</h3>
         <p id="stat-sisa" class="text-4xl font-bold text-accent">0</p>
     </div>
-    <div class="stat-card bg-orange-50 p-5 rounded-xl shadow-sm border-b-4 border-accent hover:-translate-y-1 hover:shadow-md transition-all duration-300">
+    <div class="stat-card bg-orange-50 p-5 rounded-xl shadow-sm border-b-4 border-accent hover:shadow-lg transition-shadow duration-300">
         <h3 class="text-gray-500 text-sm font-semibold mb-2">Deadline Terdekat</h3>
         <p id="stat-deadline" class="text-lg font-bold text-accent leading-tight">-</p>
+    </div>
+</div>
     </div>
 </div>
             
@@ -117,7 +122,7 @@
         </section>
 
         <section class="section-box">
-            <h2>📝 Tugas Upcoming</h2>
+            <h2>Tugas Upcoming</h2>
             <div id="tugas-preview-list" class="card-container">
                 </div>
             <a href="tugas.html" class="btn-more">Lihat Semua Detail Tugas →</a>
