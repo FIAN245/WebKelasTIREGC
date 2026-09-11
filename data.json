@@ -28,7 +28,7 @@
             "dosen": "Pa Agys",
             "jam": "19:30 - 20:30",
             "ruang": "Gmeet",
-            "tipe": "Kosong"
+            "tipe": "Online"
         },
         {
             "hari": "Sabtu",
@@ -36,7 +36,7 @@
             "dosen": "Pa Aries",
             "jam": "08:00 - 09:45",
             "ruang": "Lab Dasar",
-            "tipe": "Offline"
+            "tipe": "Online"
         },
         {
             "hari": "Sabtu",
@@ -52,7 +52,7 @@
             "dosen": "Pa Agung Ragil",
             "jam": "13:00 - 14:45",
             "ruang": "Lab Lanjut",
-            "tipe": "Kosong"
+            "tipe": "Online"
         },
         {
             "hari": "Sabtu",
@@ -60,7 +60,7 @@
             "dosen": "Pa Bambang",
             "jam": "14:45 - 15:55",
             "ruang": "Lab Lanjut",
-            "tipe": "Offline"
+            "tipe": "Kosong"
         }
     ],
     "tugas": [
