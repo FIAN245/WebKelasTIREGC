@@ -61,6 +61,14 @@
             "jam": "14:45 - 15:55",
             "ruang": "Lab Lanjut",
             "tipe": "Kosong"
+        },
+        {
+            "hari": "Sabtu",
+            "matkul": "Deep Learning",
+            "dosen": "Pa Agys",
+            "jam": "19:00 - 20:30",
+            "ruang": "Gmeet",
+            "tipe": "Online"
         }
     ],
     "tugas": [
