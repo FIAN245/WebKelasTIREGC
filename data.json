@@ -69,6 +69,14 @@
             "jam": "19:00 - 20:30",
             "ruang": "Gmeet",
             "tipe": "Online"
+        },
+        {
+            "hari": "Jumat",
+            "matkul": "Deep Learning",
+            "dosen": "Pa Agys",
+            "jam": "20:30 - 21:30",
+            "ruang": "Gmeet",
+            "tipe": "Online"
         }
     ],
     "tugas": [
