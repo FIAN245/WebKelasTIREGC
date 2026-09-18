@@ -26,7 +26,7 @@
             "hari": "Jumat",
             "matkul": "Deep Learning",
             "dosen": "Pa Agys",
-            "jam": "19:30 - 20:30",
+            "jam": "18:20 - 20:00",
             "ruang": "Gmeet",
             "tipe": "Online"
         },
@@ -36,7 +36,7 @@
             "dosen": "Pa Aries",
             "jam": "08:00 - 09:45",
             "ruang": "Lab Dasar",
-            "tipe": "Online"
+            "tipe": "Offline"
         },
         {
             "hari": "Sabtu",
@@ -44,7 +44,7 @@
             "dosen": "Pa Agung Ragil",
             "jam": "10:00 - 11:30",
             "ruang": "Google Meet",
-            "tipe": "Online"
+            "tipe": "Offline"
         },
         {
             "hari": "Sabtu",
@@ -52,7 +52,7 @@
             "dosen": "Pa Agung Ragil",
             "jam": "13:00 - 14:45",
             "ruang": "Lab Lanjut",
-            "tipe": "Online"
+            "tipe": "Offline"
         },
         {
             "hari": "Sabtu",
@@ -60,15 +60,7 @@
             "dosen": "Pa Bambang",
             "jam": "14:45 - 15:55",
             "ruang": "Lab Lanjut",
-            "tipe": "Kosong"
-        },
-        {
-            "hari": "Sabtu",
-            "matkul": "Deep Learning",
-            "dosen": "Pa Agys",
-            "jam": "19:00 - 20:30",
-            "ruang": "Gmeet",
-            "tipe": "Online"
+            "tipe": "Offline"
         }
     ],
     "tugas": [
