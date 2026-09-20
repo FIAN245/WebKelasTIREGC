@@ -65,47 +65,47 @@
     ],
     "tugas": [
         {
-            "id": 1789835494079,
+            "id": 1789863634505,
             "matkul": "Data Mining",
             "judul": "Buat Data Sample Mahasiswa ",
             "deadline": "26 September 2026",
             "deskripsi": [
-                "Buat Sample data Mahasiswa Kelulusan",
-                "sebanyak 50 data di tabel excel",
-                "tabel excel meliputi JENIS KELAMIN, STATUS MAHASISWA, UMUR, STATUS NIKAH, IPS1, IPS2, IPS3, IPS4, IPS5, IPS6, IPS7, IPS8, IPK, STATUS KELULUSAN",
-                "data nya bebas, ngarang aja buat sample",
-                "untuk kolom IPK harus dirumuskan agar otomatis menghitung rata rata IPS",
-                "akan di cek langsung di kelas saat praktek"
+                "- Buat Sample data Mahasiswa Kelulusan",
+                "- sebanyak 50 data di tabel excel",
+                "- tabel excel meliputi JENIS KELAMIN, STATUS MAHASISWA, UMUR, STATUS NIKAH, IPS1, IPS2, IPS3, IPS4, IPS5, IPS6, IPS7, IPS8, IPK, STATUS KELULUSAN",
+                "- data nya bebas, ngarang aja buat sample",
+                "- untuk kolom IPK harus dirumuskan agar otomatis menghitung rata rata IPS",
+                "- akan di cek langsung di kelas saat praktek"
             ],
             "link_pengumpulan": "di cek di kelas langsung"
         },
         {
-            "id": 1789835812370,
+            "id": 1789863660104,
             "matkul": "Desain Animasi",
             "judul": "penentuan tema dan judul untuk tugas akhir",
             "deadline": "26 September 2026",
             "deskripsi": [
-                "tentukan tema dan judul yang nantinya akan dikerjakan untuk tugas UTS",
-                "diskusikan dengan kelompok yang sudah di buat : https://docs.google.com/spreadsheets/d/1kP6Ubk2nMDFDn8Hbpjso2hLoO-k7wN-Yzj-ZCh57pAM/edit?usp=sharing",
-                "nantinyaa yang dinilai \"makna, tersampaikan, aturan dan ketentuan\",",
-                "tema bebas (boleh iklan, cerita, semacamnya )",
-                "Tool yang digunakan Bebas",
-                "Boleh Animasi Digital 2D atau Stop Motion"
+                "- tentukan tema dan judul yang nantinya akan dikerjakan untuk tugas UTS",
+                "- diskusikan dengan kelompok yang sudah di buat : https://docs.google.com/spreadsheets/d/1kP6Ubk2nMDFDn8Hbpjso2hLoO-k7wN-Yzj-ZCh57pAM/edit?usp=sharing",
+                "- nantinyaa yang dinilai \"makna, tersampaikan, aturan dan ketentuan\",",
+                "- tema bebas (boleh iklan, cerita, semacamnya )",
+                "- Tool yang digunakan Bebas",
+                "- Boleh Animasi Digital 2D atau Stop Motion"
             ],
             "link_pengumpulan": "dibahas bertahap di kelas"
         },
         {
-            "id": 1789836039510,
+            "id": 1789863681183,
             "matkul": "Analisis Big Data",
             "judul": "Penentuan dan Konsultasi Judul Jurnal",
             "deadline": "26 Septemberr 2026",
             "deskripsi": [
-                "Buat Jurnal yang berhubungan dengan analisis big data",
-                "Datanya harus realtime",
-                "sumber data nya jelas",
-                "jurnal diterbitkan publishernya bebas cari sendiri",
-                "minimal jurnal bersinta 4",
-                "jurnal suudah terbit maksimal 31 Januari 2027"
+                "- Buat Jurnal yang berhubungan dengan analisis big data",
+                "- Datanya harus realtime",
+                "- sumber data nya jelas",
+                "- jurnal diterbitkan publishernya bebas cari sendiri",
+                "- minimal jurnal bersinta 4",
+                "- jurnal suudah terbit maksimal 31 Januari 2027"
             ],
             "link_pengumpulan": "ditanyakan saat di kelas"
         }
