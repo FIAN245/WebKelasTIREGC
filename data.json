@@ -80,7 +80,7 @@
             "link_pengumpulan": "di cek di kelas langsung"
         },
         {
-            "id": 1789863660104,
+            "id": 1789863841634,
             "matkul": "Desain Animasi",
             "judul": "penentuan tema dan judul untuk tugas akhir",
             "deadline": "26 September 2026",
@@ -90,12 +90,13 @@
                 "- nantinyaa yang dinilai \"makna, tersampaikan, aturan dan ketentuan\",",
                 "- tema bebas (boleh iklan, cerita, semacamnya )",
                 "- Tool yang digunakan Bebas",
-                "- Boleh Animasi Digital 2D atau Stop Motion"
+                "- Boleh Animasi Digital 2D atau Stop Motion",
+                "- Informasi lebih lanjut akan ditambahkan secara berkala"
             ],
             "link_pengumpulan": "dibahas bertahap di kelas"
         },
         {
-            "id": 1789863681183,
+            "id": 1789863865728,
             "matkul": "Analisis Big Data",
             "judul": "Penentuan dan Konsultasi Judul Jurnal",
             "deadline": "26 Septemberr 2026",
@@ -105,7 +106,8 @@
                 "- sumber data nya jelas",
                 "- jurnal diterbitkan publishernya bebas cari sendiri",
                 "- minimal jurnal bersinta 4",
-                "- jurnal suudah terbit maksimal 31 Januari 2027"
+                "- jurnal suudah terbit maksimal 31 Januari 2027",
+                "- Informasi lebih lanjut akan ditambahkan secara berkala"
             ],
             "link_pengumpulan": "ditanyakan saat di kelas"
         }
