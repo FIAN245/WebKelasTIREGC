@@ -65,14 +65,14 @@
     ],
     "tugas": [
         {
-            "id": 1789863634505,
+            "id": 1790128793462,
             "matkul": "Data Mining",
             "judul": "Buat Data Sample Mahasiswa ",
             "deadline": "26 September 2026",
             "deskripsi": [
                 "- Buat Sample data Mahasiswa Kelulusan",
                 "- sebanyak 50 data di tabel excel",
-                "- tabel excel meliputi JENIS KELAMIN, STATUS MAHASISWA, UMUR, STATUS NIKAH, IPS1, IPS2, IPS3, IPS4, IPS5, IPS6, IPS7, IPS8, IPK, STATUS KELULUSAN",
+                "- tabel excel meliputi NAMA, JENIS KELAMIN, STATUS MAHASISWA, UMUR, STATUS NIKAH, IPS1, IPS2, IPS3, IPS4, IPS5, IPS6, IPS7, IPS8, IPK, STATUS KELULUSAN",
                 "- data nya bebas, ngarang aja buat sample",
                 "- untuk kolom IPK harus dirumuskan agar otomatis menghitung rata rata IPS",
                 "- akan di cek langsung di kelas saat praktek"
