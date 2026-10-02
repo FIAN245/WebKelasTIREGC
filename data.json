@@ -9,15 +9,15 @@
     },
     "pengumuman": [
         {
-            "id": 1790912572054,
-            "tanggal": "31 Januari 2026",
-            "text": "Segera Kerjakan Tugas Jurnal dan Cari Publisher Sinta 4 / 3 disarankan yang memiliki Jadwal Terbit di Januari 2027, karena Terbitan akhir tahun ini Okt -  Des kebanyakan sudah penuh.  ",
-            "penting": true
-        },
-        {
             "id": 1790912620390,
             "tanggal": "3 Oktober 2026",
             "text": "Yang Punya Webcam Eksternal silahkan besok dibawa untuk Mata Kuliah Desain Animasi (untuk praktek Stop Motion",
+            "penting": true
+        },
+        {
+            "id": 1790913656472,
+            "tanggal": "31 Januari 2027",
+            "text": "Segera Kerjakan Tugas Jurnal dan Cari Publisher Sinta 4 / 3 disarankan yang memiliki Jadwal Terbit di Januari 2027, karena Terbitan akhir tahun ini Okt -  Des kebanyakan sudah penuh.  ",
             "penting": true
         }
     ],
