@@ -127,6 +127,23 @@
                 "- Kerjakan Segera serta cari info Publisher untuk menanyakan slot  "
             ],
             "link_pengumpulan": "Publisher masing masing"
+        },
+        {
+            "id": 1793509650544,
+            "matkul": "Analisis Big Data",
+            "judul": "Membuat Sistem berbasis Aplikasi / Web Sentimen Analisis",
+            "deadline": "5 Desember 2026",
+            "deskripsi": [
+                "-\tBoleh berbasis Aplikasi .apk / .exe atau Web",
+                "-\tTugas Individu",
+                "-\tDikirim berupa Softfile yang di arsipkan (ZIP) berisi file project dan file pendukung lainnya",
+                "-\tDikirim ke Google Drive (nanti akan disediakan)",
+                "-\tDeadline pengumpulan Pertemuan 14 / 5 Desember 2026",
+                "-\tIni termasuk Tugas Project Akhir",
+                "-\tTugas Akhir adalah Project dan Jurnal",
+                "-\tUAS tetap Tertulis"
+            ],
+            "link_pengumpulan": "Link Google Drive"
         }
     ]
 }
