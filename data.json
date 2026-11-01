@@ -129,12 +129,13 @@
             "link_pengumpulan": "Publisher masing masing"
         },
         {
-            "id": 1793509650544,
+            "id": 1793529499992,
             "matkul": "Analisis Big Data",
             "judul": "Membuat Sistem berbasis Aplikasi / Web Sentimen Analisis",
             "deadline": "5 Desember 2026",
             "deskripsi": [
                 "-\tBoleh berbasis Aplikasi .apk / .exe atau Web",
+                "-\tMenggunakan Salah satu metode Machine Learning atau Deep Learning",
                 "-\tTugas Individu",
                 "-\tDikirim berupa Softfile yang di arsipkan (ZIP) berisi file project dan file pendukung lainnya",
                 "-\tDikirim ke Google Drive (nanti akan disediakan)",
