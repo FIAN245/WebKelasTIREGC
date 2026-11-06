@@ -20,7 +20,7 @@
             "hari": "Jumat",
             "matkul": "Deep Learning",
             "dosen": "Pa Agys",
-            "jam": "18:30 - 19:30",
+            "jam": "19:00 - 20:00",
             "ruang": "Gmeet",
             "tipe": "Online"
         },
@@ -30,7 +30,7 @@
             "dosen": "Pa Aries",
             "jam": "08:00 - 09:45",
             "ruang": "Lab Dasar",
-            "tipe": "Kosong"
+            "tipe": "Offline"
         },
         {
             "hari": "Sabtu",
