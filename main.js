@@ -129,31 +129,121 @@ function renderAllTugas(listTugas) {
     const container = document.getElementById("tugas-list-full");
     if (!container) return; 
     container.innerHTML = "";
+    
     if (listTugas.length === 0) {
-        container.innerHTML = "<p>Tidak ada tugas saat ini.</p>";
+        container.innerHTML = "<p class='text-center text-gray-500'>Tidak ada tugas saat ini.</p>";
         return;
     }
-    listTugas.forEach(tugas => {
+
+    // 1. Parsing Tanggal untuk Logika Status & Sorting (Sama dengan logika di dashboard)
+    const bulanIndo = { "januari":0, "februari":1, "maret":2, "april":3, "mei":4, "juni":5, "juli":6, "agustus":7, "september":8, "oktober":9, "november":10, "desember":11 };
+    
+    const now = new Date();
+    now.setHours(0, 0, 0, 0); // Reset jam ke 00:00 hari ini
+
+    let tugasProcessed = listTugas.map(tugas => {
+        let parseDate = null;
+        let parts = tugas.deadline.toLowerCase().split(" ");
+        if (parts.length >= 3) {
+            let d = parseInt(parts[0]);
+            let m = bulanIndo[parts[1]];
+            let y = parseInt(parts[2]);
+            if (!isNaN(d) && m !== undefined && !isNaN(y)) {
+                parseDate = new Date(y, m, d);
+            }
+        }
+        
+        let isSelesai = false;
+        if (parseDate) {
+            let selisihWaktu = parseDate.getTime() - now.getTime();
+            let selisihHari = Math.ceil(selisihWaktu / (1000 * 3600 * 24));
+            if (selisihHari < 0) isSelesai = true; // Jika hari sudah lewat dari hari ini
+        }
+
+        return {
+            ...tugas,
+            parseDate: parseDate || new Date(9999, 11, 31), // Fallback jika format salah
+            isSelesai: isSelesai
+        };
+    });
+
+    // 2. Pisahkan dan Urutkan (Aktif di atas, Selesai di bawah)
+    let tugasAktif = tugasProcessed.filter(t => !t.isSelesai);
+    let tugasSelesai = tugasProcessed.filter(t => t.isSelesai);
+
+    tugasAktif.sort((a, b) => a.parseDate - b.parseDate); // Urutkan aktif: Deadline terdekat di atas
+    tugasSelesai.sort((a, b) => b.parseDate - a.parseDate); // Urutkan selesai: Yang paling baru lewat di atas
+
+    let tugasSorted = [...tugasAktif, ...tugasSelesai]; // Gabungkan
+
+    // 3. Render HTML dengan fitur Buka-Tutup
+    tugasSorted.forEach(tugas => {
         const div = document.createElement("div");
-        div.className = "card tugas-card";
+        // Efek visual: tugas selesai dibuat agak transparan
+        div.className = `card tugas-card transition-all duration-300 ${tugas.isSelesai ? 'opacity-60 grayscale-[20%]' : ''}`;
+        
         let linkHtml = "";
         if (!tugas.link_pengumpulan) {
-            linkHtml = `<span style="color: grey;">(Offline)</span>`;
+            linkHtml = `<span class="text-gray-500 italic">(Offline)</span>`;
         } else if (tugas.link_pengumpulan.startsWith("http")) {
-            linkHtml = `<a href="${tugas.link_pengumpulan}" target="_blank" class="btn-more">📂 Kumpulkan Tugas</a>`;
+            linkHtml = `<a href="${tugas.link_pengumpulan}" target="_blank" class="btn-more inline-block mt-3 text-primary hover:text-accent font-bold">📂 Kumpulkan Tugas</a>`;
         } else {
-            linkHtml = `<div style="margin-top:10px; padding:10px; background:#e3f2fd; border-radius:6px;">ℹ️ ${tugas.link_pengumpulan}</div>`;
+            linkHtml = `<div class="mt-3 p-3 bg-blue-50 text-blue-800 rounded-md text-sm border border-blue-100">ℹ️ ${tugas.link_pengumpulan}</div>`;
         }
+
+        // Tampilan Badge Status
+        let badgeHtml = tugas.isSelesai 
+            ? `<span class="bg-green-100 text-green-700 px-3 py-1 rounded-full text-xs font-bold border border-green-300">✅ Selesai</span>`
+            : `<span class="bg-orange-100 text-orange-700 px-3 py-1 rounded-full text-xs font-bold border border-orange-300 shadow-sm">⏳ Proses</span>`;
+
         div.innerHTML = `
-            <h3 style="color:var(--primary-color)">${tugas.matkul}</h3>
-            <h2 style="font-size: 1.2rem;">${tugas.judul}</h2>
-            <p>Deadline: <span class="deadline">${tugas.deadline}</span></p>
-            ${formatContent(tugas.deskripsi)}
-            ${linkHtml}
+            <!-- Area Header (Klik untuk Buka/Tutup) -->
+            <div class="cursor-pointer flex justify-between items-center" onclick="toggleTugas(this)">
+                <div class="flex-1 pr-4">
+                    <h3 class="text-primary font-bold text-[1.1rem] m-0">${tugas.matkul}</h3>
+                    <h2 class="text-lg font-semibold my-1 text-gray-800">${tugas.judul}</h2>
+                    <p class="text-sm m-0">Deadline: <span class="font-bold ${tugas.isSelesai ? 'text-gray-500' : 'text-red-600'}">${tugas.deadline}</span></p>
+                </div>
+                <div class="flex flex-col items-end justify-between space-y-3">
+                    ${badgeHtml}
+                    <div class="toggle-icon w-8 h-8 flex items-center justify-center bg-gray-100 hover:bg-gray-200 rounded-full text-xl text-gray-600 transition-transform duration-300 shadow-sm">+</div>
+                </div>
+            </div>
+
+            <!-- Area Detail (Disembunyikan by default via class 'hidden') -->
+            <div class="tugas-detail hidden mt-4 pt-4 border-t border-dashed border-gray-300">
+                <div class="text-gray-700 text-sm leading-relaxed">
+                    ${formatContent(tugas.deskripsi)}
+                </div>
+                ${linkHtml}
+            </div>
         `;
         container.appendChild(div);
     });
 }
+
+// Fungsi global untuk logika Klik Buka-Tutup
+window.toggleTugas = function(headerElement) {
+    const detail = headerElement.nextElementSibling;
+    const icon = headerElement.querySelector('.toggle-icon');
+    
+    if (detail.classList.contains('hidden')) {
+        // Aksi Buka
+        detail.classList.remove('hidden');
+        icon.innerHTML = "−";
+        icon.classList.add('rotate-180', 'bg-blue-100', 'text-blue-600');
+        
+        // Meminjam GSAP milikmu untuk animasi mulus jika tersedia
+        if(typeof gsap !== 'undefined') {
+            gsap.fromTo(detail, {opacity: 0, y: -10}, {opacity: 1, y: 0, duration: 0.3, ease: "power2.out"});
+        }
+    } else {
+        // Aksi Tutup
+        detail.classList.add('hidden');
+        icon.innerHTML = "+";
+        icon.classList.remove('rotate-180', 'bg-blue-100', 'text-blue-600');
+    }
+};
 
 function renderProfilKelas(identitas) {
     const container = document.getElementById("profil-kelas-card");
