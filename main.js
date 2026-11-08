@@ -109,17 +109,73 @@ function renderTugasPreview(listTugas) {
     const container = document.getElementById("tugas-preview-list");
     if (!container) return;
     container.innerHTML = "";
-    const previewTugas = listTugas.slice(0, 2); 
+
+    // 1. Parsing Tanggal & Pengecekan Status (Sama seperti halaman Tugas)
+    const bulanIndo = { "januari":0, "februari":1, "maret":2, "april":3, "mei":4, "juni":5, "juli":6, "agustus":7, "september":8, "oktober":9, "november":10, "desember":11 };
+    
+    const now = new Date();
+    now.setHours(0, 0, 0, 0); // Reset jam ke 00:00 hari ini
+
+    let tugasProcessed = listTugas.map(tugas => {
+        let parseDate = null;
+        let parts = tugas.deadline.toLowerCase().split(" ");
+        if (parts.length >= 3) {
+            let d = parseInt(parts[0]);
+            let m = bulanIndo[parts[1]];
+            let y = parseInt(parts[2]);
+            if (!isNaN(d) && m !== undefined && !isNaN(y)) {
+                parseDate = new Date(y, m, d);
+            }
+        }
+        
+        let isSelesai = false;
+        if (parseDate) {
+            let selisihWaktu = parseDate.getTime() - now.getTime();
+            let selisihHari = Math.ceil(selisihWaktu / (1000 * 3600 * 24));
+            if (selisihHari < 0) isSelesai = true;
+        }
+
+        return {
+            ...tugas,
+            parseDate: parseDate || new Date(9999, 11, 31),
+            isSelesai: isSelesai
+        };
+    });
+
+    // 2. Filter HANYA tugas yang belum selesai, lalu urutkan deadline terdekat
+    let tugasAktif = tugasProcessed.filter(t => !t.isSelesai);
+    tugasAktif.sort((a, b) => a.parseDate - b.parseDate);
+
+    // 3. Ambil 2 tugas teratas (paling mepet deadline)
+    const previewTugas = tugasAktif.slice(0, 2); 
+
+    // Jika kebetulan semua tugas sudah selesai, tampilkan pesan ini
+    if (previewTugas.length === 0) {
+        container.innerHTML = `
+            <div style="grid-column: 1 / -1; text-align: center; padding: 30px; background: #e8f5e9; border-radius: 8px; border: 1px dashed #81c784;">
+                <p style="color: #2e7d32; font-size: 1.2rem; font-weight: bold; margin-bottom: 5px;">🎉 Yey! Semua Tugas Selesai.</p>
+                <p style="color: #666; font-size: 0.9rem;">Saat ini tidak ada tugas aktif yang mendekati deadline.</p>
+            </div>
+        `;
+        return;
+    }
+
+    // 4. Render HTML untuk 2 Tugas Upcoming
     previewTugas.forEach(tugas => {
         const div = document.createElement("div");
         div.className = "card tugas-card";
         let shortDesc = Array.isArray(tugas.deskripsi) ? tugas.deskripsi[0] + "..." : tugas.deskripsi;
+        
+        // Sedikit tambahan label "Proses" agar seragam dengan halaman Tugas
         div.innerHTML = `
-            <h3>${tugas.matkul}</h3>
-            <h4>${tugas.judul}</h4>
-            <p>Deadline: <span class="deadline">${tugas.deadline}</span></p>
-            <hr>
-            <p class="desc-short">${shortDesc}</p>
+            <div style="display: flex; justify-content: space-between; align-items: flex-start;">
+                <h3 style="margin: 0; color: var(--primary-color);">${tugas.matkul}</h3>
+                <span style="background: #ffedd5; color: #c2410c; padding: 2px 10px; border-radius: 5px; font-size: 0.75rem; font-weight: bold; border: 1px solid #fdba74;">⏳ Proses</span>
+            </div>
+            <h4 style="margin: 8px 0;">${tugas.judul}</h4>
+            <p style="margin: 0;">Deadline: <span class="deadline">${tugas.deadline}</span></p>
+            <hr style="margin: 12px 0; border: 0; border-top: 1px dashed #ccc;">
+            <p class="desc-short" style="margin: 0; color: #555; font-size: 0.9rem;">${shortDesc}</p>
         `;
         container.appendChild(div);
     });
