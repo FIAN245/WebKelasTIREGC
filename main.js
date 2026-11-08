@@ -188,7 +188,7 @@ function renderAllTugas(listTugas) {
         } else if (tugas.link_pengumpulan.startsWith("http")) {
             linkHtml = `<a href="${tugas.link_pengumpulan}" target="_blank" class="btn-more inline-block mt-3 text-primary hover:text-accent font-bold">📂 Kumpulkan Tugas</a>`;
         } else {
-            linkHtml = `<div class="mt-3 p-3 bg-blue-50 text-blue-800 rounded-md text-sm border border-blue-100">ℹ️ ${tugas.link_pengumpulan}</div>`;
+            linkHtml = `div.className = `card tugas-card ${tugas.isSelesai ? 'opacity-60' : ''}`;
         }
 
         // Tampilan Badge Status
