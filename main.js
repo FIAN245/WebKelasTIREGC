@@ -135,7 +135,7 @@ function renderAllTugas(listTugas) {
         return;
     }
 
-    // 1. Parsing Tanggal untuk Logika Status & Sorting (Sama dengan logika di dashboard)
+    // 1. Parsing Tanggal untuk Logika Status & Sorting
     const bulanIndo = { "januari":0, "februari":1, "maret":2, "april":3, "mei":4, "juni":5, "juli":6, "agustus":7, "september":8, "oktober":9, "november":10, "desember":11 };
     
     const now = new Date();
@@ -179,8 +179,8 @@ function renderAllTugas(listTugas) {
     // 3. Render HTML dengan fitur Buka-Tutup
     tugasSorted.forEach(tugas => {
         const div = document.createElement("div");
-        // Efek visual: tugas selesai dibuat agak transparan
-        div.className = `card tugas-card transition-all duration-300 ${tugas.isSelesai ? 'opacity-60 grayscale-[20%]' : ''}`;
+        // FIX: Hapus transition-all duration-300 agar tidak bentrok dengan GSAP
+        div.className = `card tugas-card ${tugas.isSelesai ? 'opacity-60' : ''}`;
         
         let linkHtml = "";
         if (!tugas.link_pengumpulan) {
@@ -188,7 +188,8 @@ function renderAllTugas(listTugas) {
         } else if (tugas.link_pengumpulan.startsWith("http")) {
             linkHtml = `<a href="${tugas.link_pengumpulan}" target="_blank" class="btn-more inline-block mt-3 text-primary hover:text-accent font-bold">📂 Kumpulkan Tugas</a>`;
         } else {
-            linkHtml = `div.className = `card tugas-card ${tugas.isSelesai ? 'opacity-60' : ''}`;
+            // FIX: Kembalikan tampilan info teks biasa
+            linkHtml = `<div class="mt-3 p-3 bg-blue-50 text-blue-800 rounded-md text-sm border border-blue-100">ℹ️ ${tugas.link_pengumpulan}</div>`;
         }
 
         // Tampilan Badge Status
