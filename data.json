@@ -139,6 +139,24 @@
                 "-\tUAS tetap Tertulis"
             ],
             "link_pengumpulan": "Link Google Drive"
+        },
+        {
+            "id": 1794532710629,
+            "matkul": "Desain Animasi",
+            "judul": "Membuat Animasi Digital Tugas UAS",
+            "deadline": "19 Desember 2026",
+            "deskripsi": [
+                "Tugas Kelompok (seperti kelompok sebelumnya)",
+                "Membuat Animasi Digital 2D/3D/Hybrid",
+                "boleh juga pakai AI (asal konsistensi terjaga)",
+                "Konsep bebas (cerita, iklan, fantasy,drama)",
+                "yang ditonjolkan adalah Penyampaian makna / cerita nya",
+                "visual hanya nilai tambah saja",
+                "Di Upload di Youtube perwakilan anggota kelompok (sertakan Nama, NIM)",
+                "lalu kirim linknya ke Admin",
+                "bila sudah selesai sekarang, bisa langsung kirim ke admin"
+            ],
+            "link_pengumpulan": "URL GDrive"
         }
     ]
 }
