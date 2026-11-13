@@ -22,15 +22,15 @@
             "dosen": "Pa Agys",
             "jam": "19:00 - 20:00",
             "ruang": "Gmeet",
-            "tipe": "Online"
+            "tipe": "Kosong"
         },
         {
             "hari": "Sabtu",
             "matkul": "Data Mining",
             "dosen": "Pa Aries",
-            "jam": "08:00 - 09:45",
+            "jam": "08:30 - 09:45",
             "ruang": "Lab Dasar",
-            "tipe": "Offline"
+            "tipe": "Online"
         },
         {
             "hari": "Sabtu",
