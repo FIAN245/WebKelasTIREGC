@@ -35,7 +35,7 @@
         <div class="bg-white p-6 rounded-xl shadow-sm border-l-4 border-blue-500">
             <h3 class="text-lg font-bold text-primary mb-4"><i class="fa-solid fa-calendar-alt mr-2"></i>Manajemen Jadwal</h3>
             <select id="j-selector" onchange="pilihJadwal()" class="w-full p-2 mb-4 border rounded border-blue-300 font-medium text-blue-800 focus:ring-2 focus:ring-primary">
-                <option value="new">-- ✨ Tambah Jadwal Baru --</option>
+                <option value="new">-- Tambah Jadwal Baru --</option>
             </select>
             <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
                 <div><label class="block text-sm font-semibold mb-1">Hari</label><select id="j-hari" class="w-full p-2 border rounded"><option>Senin</option><option>Selasa</option><option>Rabu</option><option>Kamis</option><option>Jumat</option><option>Sabtu</option><option>Minggu</option></select></div>
@@ -61,7 +61,7 @@
         <div class="bg-white p-6 rounded-xl shadow-sm border-l-4 border-red-500">
             <h3 class="text-lg font-bold text-red-600 mb-4"><i class="fa-solid fa-bullhorn mr-2"></i>Manajemen Pengumuman</h3>
             <select id="p-selector" onchange="pilihPengumuman()" class="w-full p-2 mb-4 border rounded border-red-300 font-medium text-red-800 focus:ring-2 focus:ring-red-500">
-                <option value="new">-- ✨ Tambah Pengumuman Baru --</option>
+                <option value="new">-- Tambah Pengumuman Baru --</option>
             </select>
             <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
                 <div><label class="block text-sm font-semibold mb-1">Tanggal & Waktu</label><input type="text" id="p-tanggal" placeholder="Misal: 15 Sept 2026 - 10:00" class="w-full p-2 border rounded"></div>
@@ -83,7 +83,7 @@
         <div class="bg-white p-6 rounded-xl shadow-sm border-l-4 border-green-500">
             <h3 class="text-lg font-bold text-green-600 mb-4"><i class="fa-solid fa-tasks mr-2"></i>Manajemen Tugas</h3>
             <select id="t-selector" onchange="pilihTugas()" class="w-full p-2 mb-4 border rounded border-green-300 font-medium text-green-800 focus:ring-2 focus:ring-green-500">
-                <option value="new">-- ✨ Tambah Tugas Baru --</option>
+                <option value="new">-- Tambah Tugas Baru --</option>
             </select>
             <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
                 <div><label class="block text-sm font-semibold mb-1">Mata Kuliah</label><input type="text" id="t-matkul" placeholder="Mata Kuliah" class="w-full p-2 border rounded"></div>
@@ -295,7 +295,7 @@
                     body: JSON.stringify({ message: "Update Data Keseluruhan via Admin Panel", content: encodedContent, sha: fileSha })
                 });
                 if (response.ok) {
-                    Swal.fire('Berhasil Terkirim! 🚀', 'Situs kamu akan terupdate dalam belasan detik.', 'success').then(() => location.reload());
+                    Swal.fire('Berhasil Terkirim!', 'Situs kamu akan terupdate dalam belasan detik.', 'success').then(() => location.reload());
                 } else throw new Error('Gagal Push.');
             } catch (error) { Swal.fire('Gagal Push!', error.message, 'error'); }
         }
