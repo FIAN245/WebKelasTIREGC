@@ -36,7 +36,7 @@
             "dosen": "Pa Aries",
             "jam": "08:30 - 09:45",
             "ruang": "Lab Dasar",
-            "tipe": "Online"
+            "tipe": "Offline"
         },
         {
             "hari": "Sabtu",
@@ -163,6 +163,18 @@
                 "- bila sudah selesai sekarang, bisa langsung kirim ke admin"
             ],
             "link_pengumpulan": "URL GDrive"
+        },
+        {
+            "id": 1795152828778,
+            "matkul": "Data Mining",
+            "judul": "Mengikuti Tutorial Data Mining Hingga Berhasil",
+            "deadline": "21 November 2026",
+            "deskripsi": [
+                "- Ikuti dan Praktekan hingga berhasil yang ada di Video Tutorial Python",
+                "- Video cek di Grup yang sudah admin kirim",
+                "- di cek langsung saat di kelas "
+            ],
+            "link_pengumpulan": "Akan Di Cek Langsung di Kelas"
         }
     ]
 }
