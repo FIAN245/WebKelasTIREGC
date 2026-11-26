@@ -165,16 +165,34 @@
             "link_pengumpulan": "URL GDrive"
         },
         {
-            "id": 1795152828778,
+            "id": 1795659234363,
             "matkul": "Data Mining",
             "judul": "Mengikuti Tutorial Data Mining Hingga Berhasil",
-            "deadline": "21 November 2026",
+            "deadline": "28 November 2026",
             "deskripsi": [
                 "- Ikuti dan Praktekan hingga berhasil yang ada di Video Tutorial Python",
                 "- Video cek di Grup yang sudah admin kirim",
-                "- di cek langsung saat di kelas "
+                "- di cek langsung saat di kelas ",
+                "- yang dipertemuan sebelumnya belum selesai,  dilanjut di pertemuan berikutnya"
             ],
             "link_pengumpulan": "Akan Di Cek Langsung di Kelas"
+        },
+        {
+            "id": 1795661056581,
+            "matkul": "Data Mining",
+            "judul": "Buat Project Web Sistem Estimasi Data",
+            "deadline": "19 Desember 2026",
+            "deskripsi": [
+                "- membuat Web sistem estimasi (contoh nya seperti  video materi \"estimasi harga mobil tiap tahun\"",
+                "- menggunakan python & Streamlit ",
+                "- setelah jadi, project direkam lalu didalam rekamanya dijelaskan fitur dan fungsinya",
+                "- video rekamannya di upload ke Youtube ",
+                "- buat Makalah Laporan berdasarkan project yang dibuat ",
+                "- lalu link youtubenya di masukkan ke Makalah Laporan ",
+                "- laporan di cetak dan dijilid",
+                "- dikumpulkan saat hari ujian di pengawas"
+            ],
+            "link_pengumpulan": "dikumpulkan dalam bentuk makalah"
         }
     ]
 }
