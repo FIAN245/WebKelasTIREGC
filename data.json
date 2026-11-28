@@ -178,12 +178,15 @@
             "link_pengumpulan": "Akan Di Cek Langsung di Kelas"
         },
         {
-            "id": 1795661056581,
+            "id": 1795830957487,
             "matkul": "Data Mining",
-            "judul": "Buat Project Web Sistem Estimasi Data",
+            "judul": "UAS-Buat Project Web Sistem Estimasi Data",
             "deadline": "19 Desember 2026",
             "deskripsi": [
                 "- membuat Web sistem estimasi (contoh nya seperti  video materi \"estimasi harga mobil tiap tahun\"",
+                "- judul bebas tapi tiap mahasiswa harus beda tidak boleh ada yang sama",
+                "- tulis judul masing masing di sheet ini : https://docs.google.com/spreadsheets/d/1iASHJQj1pa3CZ8IZdZZ_lz7bI6i2q0GKAnXZDKCdAsk/edit?usp=sharing",
+                "- detail intruksi tugas uas dari dosen bisa cek di link ini : ",
                 "- menggunakan python & Streamlit ",
                 "- setelah jadi, project direkam lalu didalam rekamanya dijelaskan fitur dan fungsinya",
                 "- video rekamannya di upload ke Youtube ",
